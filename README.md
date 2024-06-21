@@ -6,6 +6,8 @@ This compilation builds on our [Review Paper](https://rdcu.be/dLah8) and continu
 
 The review article is the result of an awesome collaboration with [Yuanqi Du](https://yuanqidu.github.io/), [Arian Jamasb](https://jamasb.io/), [Tianfan Fu](https://futianfan.github.io/), [Charlie Harris](https://cch1999.github.io/), [Yingheng Wang](https://isjakewong.github.io/), [Chenru Duan](https://www.crduan.com/), [Pietro Liò](https://www.cl.cam.ac.uk/~pl219/), [Philippe Schwaller](https://people.epfl.ch/philippe.schwaller?lang=en), and [Tom L. Blundell](https://www.bioc.cam.ac.uk/research/blundell)!
 
+***Please let me know if any examples are missing!*** 🙂
+
 <br>
 
 **Every entry contains the following information:**
@@ -22,6 +24,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
  
  Many papers were first pre-printed on either *ChemRxiv*, *BioRxiv*, or *ArXiv* but for ease of organization, the **final** paper publication date is taken. 
  The only exception is if the paper is still in pre-print stage which is the case for many goal-oriented generation examples because they are so recent (as of writing this statement in June 2024).
+
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 <br>
