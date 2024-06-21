@@ -8,7 +8,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 <br>
 
-Every entry contains the following information:
+**Every entry contains the following information:**
 1. Publication Date - Paper Link
 2. Target - Design Task
 3. Model (Input: [Molecular Representation], Output: [Molecular Representation])
@@ -16,7 +16,12 @@ Every entry contains the following information:
 5. Outcome (denoted nM if < 10 nM) - Most Potent Design (**NOTE**: Most potent *without* any domain-expert modifications. This is in contrast to our [Review Paper](https://rdcu.be/dLah8) which reports the **final** outcome)
 6. Notes (if applicable)
 
-**Examples are presented in chronological order based on the final paper publication date. Many papers were first pre-printed on either *ChemRxiv*, *BioRxiv*, or *ArXiv* but for ease of organization, the final paper publication date is taken. The only exception is if the paper is still in pre-print stage which is the case for many goal-oriented generation examples because they are so recent (as of writing this statement in June 2024).**
+<br>
+
+**Examples are presented in chronological order based on the final paper publication date.**
+ 
+ Many papers were first pre-printed on either *ChemRxiv*, *BioRxiv*, or *ArXiv* but for ease of organization, the **final** paper publication date is taken. 
+ The only exception is if the paper is still in pre-print stage which is the case for many goal-oriented generation examples because they are so recent (as of writing this statement in June 2024).
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 <br>
