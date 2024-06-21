@@ -1,12 +1,14 @@
-# Generative Drug Design with Experimental Validation
+# Generative Drug (Candidates) Design with Experimental Validation
 
-Compilation of literature examples of generative drug design that demonstrates experimental validation *at least* *in vitro*. Examples with also *in vivo* validation are specifically noted.
+Compilation of literature examples of generative drug (**candidates**) design that demonstrates experimental validation *at least* *in vitro*. Examples with also *in vivo* validation are specifically noted.
 
 This compilation builds on our [Review Paper](https://rdcu.be/dLah8) and continues to compile literature examples for an up-to-date resource. 
 
 The review article is the result of an awesome collaboration with [Yuanqi Du](https://yuanqidu.github.io/), [Arian Jamasb](https://jamasb.io/), [Tianfan Fu](https://futianfan.github.io/), [Charlie Harris](https://cch1999.github.io/), [Yingheng Wang](https://isjakewong.github.io/), [Chenru Duan](https://www.crduan.com/), [Pietro Liò](https://www.cl.cam.ac.uk/~pl219/), [Philippe Schwaller](https://people.epfl.ch/philippe.schwaller?lang=en), and [Tom L. Blundell](https://www.bioc.cam.ac.uk/research/blundell)!
 
 ***Please let me know if any examples are missing!*** 🙂
+
+**Fun fact (as of June 21, 2024)**: 18/42 examples are from 2024!
 
 <br>
 
