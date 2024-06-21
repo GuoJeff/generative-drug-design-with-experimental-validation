@@ -374,7 +374,7 @@ Every entry contains the following information:
 
 ------------------------------------------------------------------------------------------------------------
 
-### 5. Generative deep learning enables the discovery of a potent and selective RIPK1 inhibitor
+### 6. Generative deep learning enables the discovery of a potent and selective RIPK1 inhibitor
 
 **Publication Date**: November 12, 2022 - [Paper Link](https://www.nature.com/articles/s41467-022-34692-w)
 
@@ -394,7 +394,7 @@ Every entry contains the following information:
 
  # **2023**
 
-### 6. AlphaFold accelerates artificial intelligence powered drug discovery: efficient discovery of a novel CDK20 small molecule inhibitor
+### 7. AlphaFold accelerates artificial intelligence powered drug discovery: efficient discovery of a novel CDK20 small molecule inhibitor
 
 **Publication Date**: January 10, 2023 - [Paper Link](https://pubs.rsc.org/en/content/articlelanding/2023/sc/d2sc05709c)
 
@@ -412,7 +412,7 @@ Every entry contains the following information:
 
 ------------------------------------------------------------------------------------------------------------
 
-### 7. Discovery of Potent, Selective, and Orally Bioavailable Small-Molecule Inhibitors of CDK8 for the Treatment of Cancer
+### 8. Discovery of Potent, Selective, and Orally Bioavailable Small-Molecule Inhibitors of CDK8 for the Treatment of Cancer
 
 **Publication Date**: April 7, 2023 - [Paper Link](https://pubs.acs.org/doi/full/10.1021/acs.jmedchem.2c01718)
 
@@ -430,7 +430,7 @@ Every entry contains the following information:
 
 ------------------------------------------------------------------------------------------------------------
 
-### 8. De Novo Design of κ-Opioid Receptor Antagonists Using a Generative Deep-Learning Framework
+### 9. De Novo Design of κ-Opioid Receptor Antagonists Using a Generative Deep-Learning Framework
 
 **Publication Date**: August 9, 2023 - [Paper Link](https://pubs.acs.org/doi/10.1021/acs.jcim.3c00651)
 
@@ -446,7 +446,7 @@ Every entry contains the following information:
 
 ------------------------------------------------------------------------------------------------------------
 
-### 9. Discovery of novel and selective SIK2 inhibitors by the application of AlphaFold structures and generative models
+### 10. Discovery of novel and selective SIK2 inhibitors by the application of AlphaFold structures and generative models
 
 **Publication Date**: August 15, 2023 - [Paper Link](https://www.sciencedirect.com/science/article/pii/S0968089623002626)
 
@@ -466,7 +466,7 @@ Every entry contains the following information:
 
  # **2024**
 
-### 10. Discovery of Novel and Potent Prolyl Hydroxylase Domain-Containing Protein (PHD) Inhibitors for The Treatment of Anemia
+### 11. Discovery of Novel and Potent Prolyl Hydroxylase Domain-Containing Protein (PHD) Inhibitors for The Treatment of Anemia
 
 **Publication Date**: January 8, 2024 - [Paper Link](https://pubs.acs.org/doi/full/10.1021/acs.jmedchem.3c01932)
 
@@ -484,7 +484,7 @@ Every entry contains the following information:
 
 ------------------------------------------------------------------------------------------------------------
 
-### 11. Local Scaffold Diversity-Contributed Generator for Discovering Potential NLRP3 Inhibitors
+### 12. Local Scaffold Diversity-Contributed Generator for Discovering Potential NLRP3 Inhibitors
 
 **Publication Date**: January 23, 2024 - [Paper Link](https://pubs.acs.org/doi/full/10.1021/acs.jcim.3c01818)
 
@@ -502,7 +502,7 @@ Every entry contains the following information:
 
 ------------------------------------------------------------------------------------------------------------
 
-### 12. Target-aware Molecule Generation for Drug Design Using a Chemical Language Model
+### 13. Target-aware Molecule Generation for Drug Design Using a Chemical Language Model
 
 **Publication Date**: February 1, 2024 - [Pre-print Link](https://www.biorxiv.org/content/10.1101/2024.01.08.574635v3)
 
@@ -520,7 +520,7 @@ Every entry contains the following information:
 
 ------------------------------------------------------------------------------------------------------------
 
-### 13. Quantum Computing-Enhanced Algorithm Unveils Novel Inhibitors for KRAS
+### 14. Quantum Computing-Enhanced Algorithm Unveils Novel Inhibitors for KRAS
 
 **Publication Date**: February 13, 2024 - [Pre-print Link](https://arxiv.org/abs/2402.08210)
 
@@ -538,7 +538,7 @@ Every entry contains the following information:
 
 ------------------------------------------------------------------------------------------------------------
 
-### 14. Generate What You Can Make: Achieving in-house synthesizability with readily available resources in de novo drug design
+### 15. Generate What You Can Make: Achieving in-house synthesizability with readily available resources in de novo drug design
 
 **Publication Date**: March 5, 2024 - [Pre-print Link](https://chemrxiv.org/engage/chemrxiv/article-details/65e51a8466c138172921935f)
 
@@ -556,7 +556,7 @@ Every entry contains the following information:
 
 ------------------------------------------------------------------------------------------------------------
 
-### 15. A small-molecule TNIK inhibitor targets fibrosis in preclinical and clinical models
+### 16. A small-molecule TNIK inhibitor targets fibrosis in preclinical and clinical models
 
 **Publication Date**: March 8, 2024 - [Paper Link](https://www.nature.com/articles/s41587-024-02143-0) - [Blog Post](https://insilico.com/blog/first_phase2)
 
@@ -576,7 +576,7 @@ Every entry contains the following information:
 
 ------------------------------------------------------------------------------------------------------------
 
-### 16. Accelerating factor Xa inhibitor discovery with a de novo drug design pipeline
+### 17. Accelerating factor Xa inhibitor discovery with a de novo drug design pipeline
 
 **Publication Date**: March 11, 2024 - [Paper Link](https://www.sciencedirect.com/science/article/pii/S0968089624000762?via%3Dihub)
 
@@ -594,7 +594,7 @@ Every entry contains the following information:
 
 ------------------------------------------------------------------------------------------------------------
 
-### 17. PocketFlow is a data-and-knowledge-driven structure-based molecular generative model
+### 18. PocketFlow is a data-and-knowledge-driven structure-based molecular generative model
 
 **Publication Date**: March 11, 2024 - [Paper Link](https://www.nature.com/articles/s42256-024-00808-8)
 
@@ -612,7 +612,7 @@ Every entry contains the following information:
 
 ------------------------------------------------------------------------------------------------------------
 
-### 18. Deep Geometry Handling and Fragment-wise Molecular 3D Graph Generation
+### 19. Deep Geometry Handling and Fragment-wise Molecular 3D Graph Generation
 
 **Publication Date**: March 15, 2024 - [Pre-paper Link](https://arxiv.org/abs/2404.00014)
 
@@ -628,7 +628,7 @@ Every entry contains the following information:
 
 ------------------------------------------------------------------------------------------------------------
 
-### 19. Generative AI for designing and validating easily synthesizable and structurally novel antibiotics
+### 20. Generative AI for designing and validating easily synthesizable and structurally novel antibiotics
 
 **Publication Date**: March 22, 2024 - [Paper Link](https://www.nature.com/articles/s42256-024-00809-7)
 
@@ -646,7 +646,7 @@ Every entry contains the following information:
 
 ------------------------------------------------------------------------------------------------------------
 
-### 20. Abstract 5727: ISM9682A, a novel and potent KIF18A inhibitor, shows robust antitumor effects against chromosomally unstable cancers
+### 21. Abstract 5727: ISM9682A, a novel and potent KIF18A inhibitor, shows robust antitumor effects against chromosomally unstable cancers
 
 **Publication Date**: March 22, 2024 - [Paper Link](https://aacrjournals.org/cancerres/article/84/6_Supplement/5727/741278/Abstract-5727-ISM9682A-a-novel-and-potent-KIF18A)
 
@@ -664,7 +664,7 @@ Every entry contains the following information:
 
 ------------------------------------------------------------------------------------------------------------
 
-### 21. A dual diffusion model enables 3D molecule generation and lead optimization based on target pockets
+### 22. A dual diffusion model enables 3D molecule generation and lead optimization based on target pockets
 
 **Publication Date**: March 26, 2024 - [Paper Link](https://www.nature.com/articles/s41467-024-46569-1)
 
@@ -683,7 +683,7 @@ The second round of focused on intra-linking the molecules resulting in macrocyc
 
 ------------------------------------------------------------------------------------------------------------
 
-### 22. Discovery of 3-hydroxymethyl-azetidine derivatives as potent polymerase theta inhibitors
+### 23. Discovery of 3-hydroxymethyl-azetidine derivatives as potent polymerase theta inhibitors
 
 **Publication Date**: April 1, 2024 - [Paper Link](https://www.sciencedirect.com/science/article/pii/S0968089624000762?via%3Dihub)
 
@@ -701,7 +701,7 @@ The second round of focused on intra-linking the molecules resulting in macrocyc
 
 ------------------------------------------------------------------------------------------------------------
 
-### 23. Quantum-assisted fragment-based automated structure generator (QFASG) for small molecule design: an in vitro study
+### 24. Quantum-assisted fragment-based automated structure generator (QFASG) for small molecule design: an in vitro study
 
 **Publication Date**: April 3, 2024 - [Paper Link](https://www.frontiersin.org/articles/10.3389/fchem.2024.1382512/full)
 
@@ -717,7 +717,7 @@ The second round of focused on intra-linking the molecules resulting in macrocyc
 
 ------------------------------------------------------------------------------------------------------------
 
-### 24. Discovery of a Novel and Potent Cyclin-Dependent Kinase 8/19 (CDK8/19) Inhibitor for the Treatment of Cancer
+### 25. Discovery of a Novel and Potent Cyclin-Dependent Kinase 8/19 (CDK8/19) Inhibitor for the Treatment of Cancer
 
 **Publication Date**: May 1, 2024 - [Paper Link](https://pubs.acs.org/doi/10.1021/acs.jmedchem.4c00248)
 
@@ -736,7 +736,7 @@ In the end, *in vitro* studies using murine CDX model for human mantle cell lymp
 
 ------------------------------------------------------------------------------------------------------------
 
-### 25. Generative Active Learning For The Search of Small-molecule Protein Binders 
+### 26. Generative Active Learning For The Search of Small-molecule Protein Binders 
 
 **Publication Date**: May 2, 2024 - [Pre-print Link](https://arxiv.org/abs/2405.01616)
 
@@ -754,7 +754,7 @@ In the end, *in vitro* studies using murine CDX model for human mantle cell lymp
 
 ------------------------------------------------------------------------------------------------------------
 
-### 26. De novo generation of multi-target compounds using deep generative chemistry
+### 27. De novo generation of multi-target compounds using deep generative chemistry
 
 **Publication Date**: May 6, 2024 - [Paper Link](https://www.nature.com/articles/s41467-024-47120-y)
 
