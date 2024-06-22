@@ -6,9 +6,23 @@ This compilation builds on our [Review Paper](https://rdcu.be/dLah8) and continu
 
 The review article is the result of an awesome collaboration with [Yuanqi Du](https://yuanqidu.github.io/), [Arian Jamasb](https://jamasb.io/), [Tianfan Fu](https://futianfan.github.io/), [Charlie Harris](https://cch1999.github.io/), [Yingheng Wang](https://isjakewong.github.io/), [Chenru Duan](https://www.crduan.com/), [Pietro Liò](https://www.cl.cam.ac.uk/~pl219/), [Philippe Schwaller](https://people.epfl.ch/philippe.schwaller?lang=en), and [Tom L. Blundell](https://www.bioc.cam.ac.uk/research/blundell)!
 
+## BibTeX Citation
+```
+@article{du2024machine,
+  title={Machine learning-aided generative molecular design},
+  author={Du, Yuanqi and Jamasb, Arian R and Guo, Jeff and Fu, Tianfan and Harris, Charles and Wang, Yingheng and Duan, Chenru and Li{\`o}, Pietro and Schwaller, Philippe and Blundell, Tom L},
+  journal={Nature Machine Intelligence},
+  pages={1--16},
+  year={2024},
+  publisher={Nature Publishing Group UK London}
+}
+```
+
+<br>
+
 ***Please let me know if any examples are missing!*** 🙂
 
-**Fun fact (as of June 21, 2024)**: 18/42 examples are from 2024!
+**Fun fact (as of June 22, 2024)**: 20/44 examples are from 2024!
 
 <br>
 
@@ -781,3 +795,42 @@ In the end, *in vitro* studies using murine CDX model for human mantle cell lymp
 **Notes**: The 4 most potent compounds achieved > 50% reduction in phosphorlation activity of both MEK1 and mTOR at 1 μM.
 
 ------------------------------------------------------------------------------------------------------------
+
+### 28. Synthetically Feasible De Novo Molecular Design of Leads Based on a Reinforcement Learning Model: AI-Assisted Discovery of an Anti-IBD Lead Targeting CXCR4
+
+**Publication Date**: June 12, 2024 - [Paper Link](https://pubs.acs.org/doi/full/10.1021/acs.jmedchem.4c00184)
+
+**Target**: CXCR4 - **Design Task**: *De novo* structure-based antagonist design
+
+**Model**: MLP (Input: SMILES, Output: SMILES)
+
+**Optimization Algorithm Class**: Reinforcement learning (SAC)
+
+**Hit Rate**: 20/20 (100%)
+
+**Outcome**: nM competitive antagonism with *in vivo* validation - **Most Potent Design**: Antagonistic rate = 78.9 ± 6.2% at 10 nm (*N* = 3 assay replicates) - Table 1
+
+**Notes**: Uses commercially available building blocks and molecular generation follows reaction templates. Uses AutoDock Vina as the docking protocol which is open-source. *In vivo* validation.
+
+------------------------------------------------------------------------------------------------------------
+
+### 29. AutoDesigner - Core Design, a De Novo Design Algorithm for Chemical Scaffolds: Application to the Design and Synthesis of Novel Selective Wee1 Inhibitors
+
+**Publication Date**: June 14, 2024 - [Pre-print Link](https://chemrxiv.org/engage/chemrxiv/article-details/666b21905101a2ffa883d62c)
+
+**Target**: Wee1 with improved selectivity against PLK1  - **Design Task**: *De novo* scaffold-based design
+
+**Model**: Enumeration
+
+**Optimization Algorithm Class**: Filtering by property values
+
+**Hit Rate**: 3/3 (100%)
+
+**Outcome**: µM inhibitor but with selectivity against PLK1 - **Most Potent Design**: IC50 Wee1 = 53.8 μM and IC50 PLK1 > 10,000 μM (Table 4)
+
+**Notes**: AutoDesigner is *generative* in a slightly different sense, in that it takes libraries of chemical moeities and attaches them, akin to enumeration.
+Uses relative free energy perturbation from Schrödinger (FEP+) combined with active learning. 
+
+------------------------------------------------------------------------------------------------------------
+
+
