@@ -255,7 +255,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 **Hit Rate**: 17/23 (74%)
 
-**Outcome**: µM inhibitor with *in vivo* validation - **Most Potent Design**: IC50 CDK2/E1 = 0.37 nM
+**Outcome**: nM inhibitor with *in vivo* validation - **Most Potent Design**: IC50 CDK2/E1 = 0.37 nM
 
 **Notes**: The hit rate is not completely accurate as the authors state some modifications were made on the generated structures for synthesis ease (it is unclear the extent of this). 13 compounds were initially synthesized. The crystal structure for one compound was solved and then a second generation campaign to generate linkers to form **macrocycles** was performed. The final optimal compound was validated ***in vivo***.
 
@@ -646,7 +646,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 **Optimization Algorithm Class**: Conditional generation (conditioned on protein pocket)
 
-**Hit Rate**: 0/3 (0%)
+**Hit Rate**: 3/3 (100%)
 
 **Outcome**: µM inhibitor - **Most Potent Design**: IC50 = 75.4 nM
 
