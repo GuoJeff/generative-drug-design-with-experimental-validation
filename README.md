@@ -538,7 +538,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 **Hit Rate**: 2/9 (22%)
 
-**Outcome**: μM inhibitor with *in vivo* validation - **Most Potent Design**: Quoted from paper: "EC50 0.4 μM against A/St. Petersburg/63/2020, 0.29 μM against A/Vladivostok/2/2009, and 0.74 μM against B/Samara/32/2018 strains (Fig. 4A)"
+**Outcome**: μM inhibitor, antiviral activity with *in vivo* validation - **Most Potent Design**: Quoted from paper: "EC50 0.4 μM against A/St. Petersburg/63/2020, 0.29 μM against A/Vladivostok/2/2009, and 0.74 μM against B/Samara/32/2018 strains (Fig. 4A)"
 
 **Notes**: *in vivo* validation was demonstrated.
 
