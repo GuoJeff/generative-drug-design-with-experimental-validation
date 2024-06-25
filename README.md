@@ -22,7 +22,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ***Please let me know if any examples are missing!*** 🙂
 
-**Fun fact (as of June 22, 2024)**: 20/44 examples are from 2024!
+**Fun fact (as of June 25, 2024)**: 22/46 examples are from 2024!
 
 <br>
 
@@ -526,7 +526,25 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ------------------------------------------------------------------------------------------------------------
 
-### 13. Target-aware Molecule Generation for Drug Design Using a Chemical Language Model
+### 13. Discovery of new antiviral agents through artificial intelligence: In vitro and in vivo results
+
+**Publication Date**: January 25, 2024 - [Paper Link](https://www.sciencedirect.com/science/article/pii/S0166354224000263?via%3Dihub#bib11)
+
+**Target**: Neuraminidase (NA) of influenza A and B viruses - **Design Task**: *De novo* structure-based design
+
+**Model**: GNN, specifically Attentive FP first described [here](https://pubs.acs.org/doi/10.1021/acs.jmedchem.9b00959) (Input: Graph, Output: Graph)
+
+**Optimization Algorithm Class**: Reinforcement learning (Q-learning)
+
+**Hit Rate**: 2/9 (22%)
+
+**Outcome**: μM inhibitor with *in vivo* validation - **Most Potent Design**: Quoted from paper: "EC50 0.4 μM against A/St. Petersburg/63/2020, 0.29 μM against A/Vladivostok/2/2009, and 0.74 μM against B/Samara/32/2018 strains (Fig. 4A)"
+
+**Notes**: *in vivo* validation was demonstrated.
+
+------------------------------------------------------------------------------------------------------------
+
+### 14. Target-aware Molecule Generation for Drug Design Using a Chemical Language Model
 
 **Publication Date**: February 1, 2024 - [Pre-print Link](https://www.biorxiv.org/content/10.1101/2024.01.08.574635v3)
 
@@ -544,7 +562,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ------------------------------------------------------------------------------------------------------------
 
-### 14. Quantum Computing-Enhanced Algorithm Unveils Novel Inhibitors for KRAS
+### 15. Quantum Computing-Enhanced Algorithm Unveils Novel Inhibitors for KRAS
 
 **Publication Date**: February 13, 2024 - [Pre-print Link](https://arxiv.org/abs/2402.08210)
 
@@ -562,7 +580,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ------------------------------------------------------------------------------------------------------------
 
-### 15. Generate What You Can Make: Achieving in-house synthesizability with readily available resources in de novo drug design
+### 16. Generate What You Can Make: Achieving in-house synthesizability with readily available resources in de novo drug design
 
 **Publication Date**: March 5, 2024 - [Pre-print Link](https://chemrxiv.org/engage/chemrxiv/article-details/65e51a8466c138172921935f)
 
@@ -580,7 +598,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ------------------------------------------------------------------------------------------------------------
 
-### 16. A small-molecule TNIK inhibitor targets fibrosis in preclinical and clinical models
+### 17. A small-molecule TNIK inhibitor targets fibrosis in preclinical and clinical models
 
 **Publication Date**: March 8, 2024 - [Paper Link](https://www.nature.com/articles/s41587-024-02143-0) - [Blog Post](https://insilico.com/blog/first_phase2)
 
@@ -600,7 +618,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ------------------------------------------------------------------------------------------------------------
 
-### 17. Accelerating factor Xa inhibitor discovery with a de novo drug design pipeline
+### 18. Accelerating factor Xa inhibitor discovery with a de novo drug design pipeline
 
 **Publication Date**: March 11, 2024 - [Paper Link](https://www.sciencedirect.com/science/article/pii/S0968089624000762?via%3Dihub)
 
@@ -618,7 +636,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ------------------------------------------------------------------------------------------------------------
 
-### 18. PocketFlow is a data-and-knowledge-driven structure-based molecular generative model
+### 19. PocketFlow is a data-and-knowledge-driven structure-based molecular generative model
 
 **Publication Date**: March 11, 2024 - [Paper Link](https://www.nature.com/articles/s42256-024-00808-8)
 
@@ -636,7 +654,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ------------------------------------------------------------------------------------------------------------
 
-### 19. Deep Geometry Handling and Fragment-wise Molecular 3D Graph Generation
+### 20. Deep Geometry Handling and Fragment-wise Molecular 3D Graph Generation
 
 **Publication Date**: March 15, 2024 - [Pre-paper Link](https://arxiv.org/abs/2404.00014)
 
@@ -652,7 +670,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ------------------------------------------------------------------------------------------------------------
 
-### 20. Generative AI for designing and validating easily synthesizable and structurally novel antibiotics
+### 21. Generative AI for designing and validating easily synthesizable and structurally novel antibiotics
 
 **Publication Date**: March 22, 2024 - [Paper Link](https://www.nature.com/articles/s42256-024-00809-7)
 
@@ -670,7 +688,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ------------------------------------------------------------------------------------------------------------
 
-### 21. Abstract 5727: ISM9682A, a novel and potent KIF18A inhibitor, shows robust antitumor effects against chromosomally unstable cancers
+### 22. Abstract 5727: ISM9682A, a novel and potent KIF18A inhibitor, shows robust antitumor effects against chromosomally unstable cancers
 
 **Publication Date**: March 22, 2024 - [Paper Link](https://aacrjournals.org/cancerres/article/84/6_Supplement/5727/741278/Abstract-5727-ISM9682A-a-novel-and-potent-KIF18A)
 
@@ -688,7 +706,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ------------------------------------------------------------------------------------------------------------
 
-### 22. A dual diffusion model enables 3D molecule generation and lead optimization based on target pockets
+### 23. A dual diffusion model enables 3D molecule generation and lead optimization based on target pockets
 
 **Publication Date**: March 26, 2024 - [Paper Link](https://www.nature.com/articles/s41467-024-46569-1)
 
@@ -707,7 +725,7 @@ The second round of focused on intra-linking the molecules resulting in macrocyc
 
 ------------------------------------------------------------------------------------------------------------
 
-### 23. Discovery of 3-hydroxymethyl-azetidine derivatives as potent polymerase theta inhibitors
+### 24. Discovery of 3-hydroxymethyl-azetidine derivatives as potent polymerase theta inhibitors
 
 **Publication Date**: April 1, 2024 - [Paper Link](https://www.sciencedirect.com/science/article/pii/S0968089624000762?via%3Dihub)
 
@@ -725,7 +743,7 @@ The second round of focused on intra-linking the molecules resulting in macrocyc
 
 ------------------------------------------------------------------------------------------------------------
 
-### 24. Quantum-assisted fragment-based automated structure generator (QFASG) for small molecule design: an in vitro study
+### 25. Quantum-assisted fragment-based automated structure generator (QFASG) for small molecule design: an in vitro study
 
 **Publication Date**: April 3, 2024 - [Paper Link](https://www.frontiersin.org/articles/10.3389/fchem.2024.1382512/full)
 
@@ -741,7 +759,7 @@ The second round of focused on intra-linking the molecules resulting in macrocyc
 
 ------------------------------------------------------------------------------------------------------------
 
-### 25. Discovery of a Novel and Potent Cyclin-Dependent Kinase 8/19 (CDK8/19) Inhibitor for the Treatment of Cancer
+### 26. Discovery of a Novel and Potent Cyclin-Dependent Kinase 8/19 (CDK8/19) Inhibitor for the Treatment of Cancer
 
 **Publication Date**: May 1, 2024 - [Paper Link](https://pubs.acs.org/doi/10.1021/acs.jmedchem.4c00248)
 
@@ -760,7 +778,7 @@ In the end, *in vitro* studies using murine CDX model for human mantle cell lymp
 
 ------------------------------------------------------------------------------------------------------------
 
-### 26. Generative Active Learning For The Search of Small-molecule Protein Binders 
+### 27. Generative Active Learning For The Search of Small-molecule Protein Binders 
 
 **Publication Date**: May 2, 2024 - [Pre-print Link](https://arxiv.org/abs/2405.01616)
 
@@ -778,7 +796,25 @@ In the end, *in vitro* studies using murine CDX model for human mantle cell lymp
 
 ------------------------------------------------------------------------------------------------------------
 
-### 27. De novo generation of multi-target compounds using deep generative chemistry
+### 28. NGT: Generative AI with Synthesizability Guarantees Identifies Potent Inhibitors for a G-protein Associated Melanocortin Receptor in a Tera-scale vHTS Screen
+
+**Publication Date**: May 8, 2024 - [Pre-print Link](https://chemrxiv.org/engage/chemrxiv/article-details/663aefc321291e5d1db3c68b)
+
+**Target**: Melanocortin Type 2 Receptor (MC2R) - **Design Task**: *De novo* anagonist design using a surrogate model
+
+**Model**: Combinatorial Synthesis Library Variational Auto-Encoder (CSLVAE) - first described [here](https://arxiv.org/abs/2211.04468) (Input: Graph, Output: Query vector to decode into molecule from library)
+
+**Optimization Algorithm Class**: Reinforcement learning
+
+**Hit Rate**: Among the 13/121 with > 50% inhibition at 30 µM, 5 were selected for further assays. 1/5 had EC50 < 10 µM. Therefore 1/121 (0.83%) had affinity < 10 µM
+
+**Outcome**: µM antagonist - **Most Potent Design**: EC50 = 6.7 μM (Table S4)
+
+**Notes**: This work is *generative* in a slightly different sense - the model decodes molecules *from* a dataset and can be seen as a combination of a generative and virtual screening method. 13/121 > 50% inhibition at 30 µM.
+
+------------------------------------------------------------------------------------------------------------
+
+### 29. De novo generation of multi-target compounds using deep generative chemistry
 
 **Publication Date**: May 6, 2024 - [Paper Link](https://www.nature.com/articles/s41467-024-47120-y)
 
@@ -796,7 +832,7 @@ In the end, *in vitro* studies using murine CDX model for human mantle cell lymp
 
 ------------------------------------------------------------------------------------------------------------
 
-### 28. Synthetically Feasible De Novo Molecular Design of Leads Based on a Reinforcement Learning Model: AI-Assisted Discovery of an Anti-IBD Lead Targeting CXCR4
+### 30. Synthetically Feasible De Novo Molecular Design of Leads Based on a Reinforcement Learning Model: AI-Assisted Discovery of an Anti-IBD Lead Targeting CXCR4
 
 **Publication Date**: June 12, 2024 - [Paper Link](https://pubs.acs.org/doi/full/10.1021/acs.jmedchem.4c00184)
 
@@ -814,7 +850,7 @@ In the end, *in vitro* studies using murine CDX model for human mantle cell lymp
 
 ------------------------------------------------------------------------------------------------------------
 
-### 29. AutoDesigner - Core Design, a De Novo Design Algorithm for Chemical Scaffolds: Application to the Design and Synthesis of Novel Selective Wee1 Inhibitors
+### 31. AutoDesigner - Core Design, a De Novo Design Algorithm for Chemical Scaffolds: Application to the Design and Synthesis of Novel Selective Wee1 Inhibitors
 
 **Publication Date**: June 14, 2024 - [Pre-print Link](https://chemrxiv.org/engage/chemrxiv/article-details/666b21905101a2ffa883d62c)
 
