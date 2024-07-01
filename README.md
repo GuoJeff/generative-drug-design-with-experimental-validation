@@ -22,7 +22,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ***Please let me know if any examples are missing!*** 🙂
 
-**Fun fact (as of June 25, 2024)**: 22/46 examples are from 2024!
+**Fun fact (as of June 25, 2024)**: 22/47 examples are from 2024!
 
 <br>
 
@@ -83,9 +83,27 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ------------------------------------------------------------------------------------------------------------
 
+# **2020**
+
+### 3. Discovery of Highly Potent, Selective, and Orally Efficacious p300/CBP Histone Acetyltransferases Inhibitors
+
+**Publication Date**: January 7, 2020 - [Paper Link](https://pubs.acs.org/doi/full/10.1021/acs.jmedchem.9b01721)
+
+**Target**: p300/CBP histone acetyltransferases (HAT) - **Design Task**: *De novo* design
+
+**Model**: LSTM RNN (Input: SMILES, Output: SMILES)
+
+**Hit Rate**: 1/1 (100%)
+
+**Outcome** Borderline nM inhibitor with *in vivo* validation - **Most Potent Design**: IC50 p300 = 10 nM
+
+**Notes**: Only 1 generated molecule was synthesized. Further manual SAR resulted in a more potent design with *in vivo* validation
+
+------------------------------------------------------------------------------------------------------------
+
 # **2021**
 
-### 3. A Novel Scalarized Scaffold Hopping Algorithm with Graph-Based Variational Autoencoder for Discovery of JAK1 Inhibitors
+### 4. A Novel Scalarized Scaffold Hopping Algorithm with Graph-Based Variational Autoencoder for Discovery of JAK1 Inhibitors
 
 **Publication Date**: August 24, 2021 - [Paper Link](https://pubs.acs.org/doi/10.1021/acsomega.1c03613)
 
@@ -101,7 +119,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ------------------------------------------------------------------------------------------------------------
 
-### 4. Combining generative artificial intelligence and on-chip synthesis for de novo drug design
+### 5. Combining generative artificial intelligence and on-chip synthesis for de novo drug design
 
 **Publication Date**: June 11, 2021 - [Paper Link](https://www.science.org/doi/10.1126/sciadv.abg3338)
 
@@ -117,7 +135,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ------------------------------------------------------------------------------------------------------------
 
-### 5. Beam Search for Automated Design and Scoring of Novel ROR Ligands with Machine Intelligence
+### 6. Beam Search for Automated Design and Scoring of Novel ROR Ligands with Machine Intelligence
 
 **Publication Date**: June 24, 2021 - [Paper Link](https://onlinelibrary.wiley.com/doi/full/10.1002/anie.202104405)
 
@@ -133,7 +151,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 # **2022**
 
-### 6. Discovery of Pyrazolo[3,4-d]pyridazinone Derivatives as Selective DDR1 Inhibitors via Deep Learning Based Design, Synthesis, and Biological Evaluation
+### 7. Discovery of Pyrazolo[3,4-d]pyridazinone Derivatives as Selective DDR1 Inhibitors via Deep Learning Based Design, Synthesis, and Biological Evaluation
 
 **Publication Date**: January 13, 2022 - [Paper Link](https://pubs.acs.org/doi/10.1021/acs.jmedchem.1c01205)
 
@@ -149,7 +167,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ------------------------------------------------------------------------------------------------------------
 
-### 7. Effective Reaction-Based De Novo Strategy for Kinase Targets: A Case Study on MERTK Inhibitors
+### 8. Effective Reaction-Based De Novo Strategy for Kinase Targets: A Case Study on MERTK Inhibitors
 
 **Publication Date**: March 30, 2022 - [Paper Link](https://pubs.acs.org/doi/10.1021/acs.jcim.2c00068)
 
@@ -165,7 +183,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ------------------------------------------------------------------------------------------------------------
 
-### 8. Recurrent neural network (RNN) model accelerates the development of antibacterial metronidazole derivatives
+### 9. Recurrent neural network (RNN) model accelerates the development of antibacterial metronidazole derivatives
 
 **Publication Date**: August 15, 2022 - [Paper Link](https://pubs.rsc.org/en/content/articlelanding/2022/ra/d2ra01807a)
 
@@ -181,7 +199,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ------------------------------------------------------------------------------------------------------------
 
-### 9. Target-Focused Library Design by Pocket-Applied Computer Vision and Fragment Deep Generative Linking
+### 10. Target-Focused Library Design by Pocket-Applied Computer Vision and Fragment Deep Generative Linking
 
 **Publication Date**: October 18, 2022 - [Paper Link](https://pubs.acs.org/doi/10.1021/acs.jmedchem.2c00931)
 
@@ -197,7 +215,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ------------------------------------------------------------------------------------------------------------
 
-### 10. PCW-A1001, AI-assisted de novo design approach to design a selective inhibitor for FLT-3(D835Y) in acute myeloid leukemia
+### 11. PCW-A1001, AI-assisted de novo design approach to design a selective inhibitor for FLT-3(D835Y) in acute myeloid leukemia
 
 **Publication Date**: November 25, 2022 - [Paper Link](https://www.frontiersin.org/articles/10.3389/fmolb.2022.1072028/full)
 
@@ -213,7 +231,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 # **2023**
 
-### 11. Leveraging molecular structure and bioactivity with chemical language models for de novo drug design
+### 12. Leveraging molecular structure and bioactivity with chemical language models for de novo drug design
 
 **Publication Date**: January 7, 2023 - [Paper Link](https://www.nature.com/articles/s41467-022-35692-6)
 
@@ -229,7 +247,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ------------------------------------------------------------------------------------------------------------
 
-### 12. Application of deep generative model for design of Pyrrolo[2,3-d] pyrimidine derivatives as new selective TANK binding kinase 1 (TBK1) inhibitors
+### 13. Application of deep generative model for design of Pyrrolo[2,3-d] pyrimidine derivatives as new selective TANK binding kinase 1 (TBK1) inhibitors
 
 **Publication Date**: February 5, 2023 - [Paper Link](https://www.sciencedirect.com/science/article/pii/S0223523422009369?via%3Dihub)
 
@@ -245,7 +263,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ------------------------------------------------------------------------------------------------------------
 
-### 13. Accelerated Discovery of Macrocyclic CDK2 Inhibitor QR-6401 by Generative Models and Structure-Based Drug Design
+### 14. Accelerated Discovery of Macrocyclic CDK2 Inhibitor QR-6401 by Generative Models and Structure-Based Drug Design
 
 **Publication Date**: February 8, 2023 - [Paper Link](https://pubs.acs.org/doi/10.1021/acsmedchemlett.2c00515)
 
@@ -261,7 +279,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ------------------------------------------------------------------------------------------------------------
 
-### 14. De Novo Design of Nurr1 Agonists via Fragment-Augmented Generative Deep Learning in Low-Data Regime
+### 15. De Novo Design of Nurr1 Agonists via Fragment-Augmented Generative Deep Learning in Low-Data Regime
 
 **Publication Date**: May 31, 2023 - [Paper Link](https://pubs.acs.org/doi/10.1021/acs.jmedchem.3c00485)
 
@@ -279,7 +297,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 # **2024**
 
-### 15. Prospective de novo drug design with deep interactome learning
+### 16. Prospective de novo drug design with deep interactome learning
 
 **Publication Date**: April 22, 2024 - [Paper Link](https://www.nature.com/articles/s41467-024-47613-w)
 
