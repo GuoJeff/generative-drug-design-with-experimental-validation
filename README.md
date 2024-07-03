@@ -22,7 +22,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ***Please let me know if any examples are missing!*** 🙂
 
-**Fun fact (as of June 25, 2024)**: 22/47 examples are from 2024!
+**Fun fact (as of July 3, 2024)**: 23/48 examples are from 2024!
 
 <br>
 
@@ -777,7 +777,25 @@ The second round of focused on intra-linking the molecules resulting in macrocyc
 
 ------------------------------------------------------------------------------------------------------------
 
-### 26. Discovery of a Novel and Potent Cyclin-Dependent Kinase 8/19 (CDK8/19) Inhibitor for the Treatment of Cancer
+### 26. Identification of SARS-CoV-2 Mpro inhibitors through deep reinforcement learning for de novo drug design and computational chemistry approaches
+
+**Publication Date**: April 29, 2024 - [Paper Link](https://pubs.rsc.org/en/Content/ArticleLanding/2024/MD/D4MD00106K)
+
+**Target**: SARS-CoV-2  - **Design Task**: *De novo* design
+
+**Model**: LSTM RNN (Input: SMILES, Output: SMILES)
+
+**Optimization Algorithm Class**: Reinforcement learning
+
+**Hit Rate**: 1/16 (6%)
+
+**Outcome**: µM inhibitor - **Most Potent Design**: IC50 = 3.27 μM (Figure 4)
+
+**Notes**: Used the REINVENT generative model. Combined both distribution learning and goal-directed generation. 17 molecules were ordered from Enamine REAL with 16/17 successfully synthesized and tested.
+
+------------------------------------------------------------------------------------------------------------
+
+### 27. Discovery of a Novel and Potent Cyclin-Dependent Kinase 8/19 (CDK8/19) Inhibitor for the Treatment of Cancer
 
 **Publication Date**: May 1, 2024 - [Paper Link](https://pubs.acs.org/doi/10.1021/acs.jmedchem.4c00248)
 
@@ -796,7 +814,7 @@ In the end, *in vitro* studies using murine CDX model for human mantle cell lymp
 
 ------------------------------------------------------------------------------------------------------------
 
-### 27. Generative Active Learning For The Search of Small-molecule Protein Binders 
+### 28. Generative Active Learning For The Search of Small-molecule Protein Binders 
 
 **Publication Date**: May 2, 2024 - [Pre-print Link](https://arxiv.org/abs/2405.01616)
 
@@ -814,7 +832,7 @@ In the end, *in vitro* studies using murine CDX model for human mantle cell lymp
 
 ------------------------------------------------------------------------------------------------------------
 
-### 28. NGT: Generative AI with Synthesizability Guarantees Identifies Potent Inhibitors for a G-protein Associated Melanocortin Receptor in a Tera-scale vHTS Screen
+### 29. NGT: Generative AI with Synthesizability Guarantees Identifies Potent Inhibitors for a G-protein Associated Melanocortin Receptor in a Tera-scale vHTS Screen
 
 **Publication Date**: May 8, 2024 - [Pre-print Link](https://chemrxiv.org/engage/chemrxiv/article-details/663aefc321291e5d1db3c68b)
 
@@ -832,7 +850,7 @@ In the end, *in vitro* studies using murine CDX model for human mantle cell lymp
 
 ------------------------------------------------------------------------------------------------------------
 
-### 29. De novo generation of multi-target compounds using deep generative chemistry
+### 30. De novo generation of multi-target compounds using deep generative chemistry
 
 **Publication Date**: May 6, 2024 - [Paper Link](https://www.nature.com/articles/s41467-024-47120-y)
 
@@ -850,7 +868,7 @@ In the end, *in vitro* studies using murine CDX model for human mantle cell lymp
 
 ------------------------------------------------------------------------------------------------------------
 
-### 30. Synthetically Feasible De Novo Molecular Design of Leads Based on a Reinforcement Learning Model: AI-Assisted Discovery of an Anti-IBD Lead Targeting CXCR4
+### 31. Synthetically Feasible De Novo Molecular Design of Leads Based on a Reinforcement Learning Model: AI-Assisted Discovery of an Anti-IBD Lead Targeting CXCR4
 
 **Publication Date**: June 12, 2024 - [Paper Link](https://pubs.acs.org/doi/full/10.1021/acs.jmedchem.4c00184)
 
@@ -868,7 +886,7 @@ In the end, *in vitro* studies using murine CDX model for human mantle cell lymp
 
 ------------------------------------------------------------------------------------------------------------
 
-### 31. AutoDesigner - Core Design, a De Novo Design Algorithm for Chemical Scaffolds: Application to the Design and Synthesis of Novel Selective Wee1 Inhibitors
+### 32. AutoDesigner - Core Design, a De Novo Design Algorithm for Chemical Scaffolds: Application to the Design and Synthesis of Novel Selective Wee1 Inhibitors
 
 **Publication Date**: June 14, 2024 - [Pre-print Link](https://chemrxiv.org/engage/chemrxiv/article-details/666b21905101a2ffa883d62c)
 
@@ -886,5 +904,3 @@ In the end, *in vitro* studies using murine CDX model for human mantle cell lymp
 Uses relative free energy perturbation from Schrödinger (FEP+) combined with active learning. 
 
 ------------------------------------------------------------------------------------------------------------
-
-
