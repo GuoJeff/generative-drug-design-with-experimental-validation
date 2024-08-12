@@ -22,7 +22,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ***Please let me know if any examples are missing!*** 🙂
 
-**Fun fact (as of July 3, 2024)**: 23/48 examples are from 2024!
+**Fun fact (as of August 12, 2024)**: 24/49 examples are from 2024!
 
 <br>
 
@@ -386,7 +386,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 **Target**: DDR1 - **Design Task**: *De novo* ligand-based design
 
-**Model**: LSTM RNN (Input: SMILES, Output: SMILES)
+**Model**: LSTM RNN (Input: SMILES, Output: SMILES) - Model is `REINVENT`
 
 **Optimization Algorithm Class**: Reinforcement learning
 
@@ -783,7 +783,7 @@ The second round of focused on intra-linking the molecules resulting in macrocyc
 
 **Target**: SARS-CoV-2  - **Design Task**: *De novo* design
 
-**Model**: LSTM RNN (Input: SMILES, Output: SMILES)
+**Model**: LSTM RNN (Input: SMILES, Output: SMILES) - Model is `REINVENT`
 
 **Optimization Algorithm Class**: Reinforcement learning
 
@@ -791,7 +791,7 @@ The second round of focused on intra-linking the molecules resulting in macrocyc
 
 **Outcome**: µM inhibitor - **Most Potent Design**: IC50 = 3.27 μM (Figure 4)
 
-**Notes**: Used the REINVENT generative model. Combined both distribution learning and goal-directed generation. 17 molecules were ordered from Enamine REAL with 16/17 successfully synthesized and tested.
+**Notes**: Combined both distribution learning and goal-directed generation. 17 molecules were ordered from Enamine REAL with 16/17 successfully synthesized and tested.
 
 ------------------------------------------------------------------------------------------------------------
 
@@ -902,5 +902,23 @@ In the end, *in vitro* studies using murine CDX model for human mantle cell lymp
 
 **Notes**: AutoDesigner is *generative* in a slightly different sense, in that it takes libraries of chemical moeities and attaches them, akin to enumeration.
 Uses relative free energy perturbation from Schrödinger (FEP+) combined with active learning. 
+
+------------------------------------------------------------------------------------------------------------
+### 33. Accelerated Discovery of Carbamate Cbl-b Inhibitors Using Generative AI Models and Structure-Based Drug Design
+
+**Publication Date**: August 12, 2024 - [Paper Link](https://pubs.acs.org/doi/10.1021/acs.jmedchem.4c01034)
+
+**Target**: Cbl-b  - **Design Task**: *De novo* scaffold-based design
+
+**Model**: LSTM RNN (Input: SMILES, Output: SMILES) - Model is `LibINVENT` which is part of `REINVENT` 
+
+**Optimization Algorithm Class**: Reinforcement learning
+
+**Hit Rate**: N/A (see notes)
+
+**Outcome**: N/A (see notes)
+
+**Notes**: LibINVENT designed 2 molecules which were of interest after FEP validation. Small modifications of these 2 compounds were made and then synthesized. Both were active and the most potent had IC50 1.2 μM. 
+A third compound was the result during chiral separation of one of the two synthesized compounds. This third compound was also tested with IC50 37 μM. The insights from these first three compounds inspired the remaining design campaign.
 
 ------------------------------------------------------------------------------------------------------------
