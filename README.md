@@ -22,7 +22,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ***Please let me know if any examples are missing!*** 🙂
 
-**Fun fact (as of August 12, 2024)**: 24/49 examples are from 2024!
+**Fun fact (as of October 14, 2024)**: 25/50 examples are from 2024!
 
 <br>
 
@@ -920,5 +920,22 @@ Uses relative free energy perturbation from Schrödinger (FEP+) combined with ac
 
 **Notes**: LibINVENT designed 2 molecules which were of interest after FEP validation. Small modifications of these 2 compounds were made and then synthesized. Both were active and the most potent had IC50 1.2 μM. 
 A third compound was the result during chiral separation of one of the two synthesized compounds. This third compound was also tested with IC50 37 μM. The insights from these first three compounds inspired the remaining design campaign.
+
+------------------------------------------------------------------------------------------------------------
+### 34. Modern hit-finding with structure-guided de novo design: identification of novel nanomolar A2A receptor ligands using reinforcement learning
+
+**Publication Date**: October 14, 2024 - [Pre-print Link](https://chemrxiv.org/engage/chemrxiv/article-details/6708fba651558a15efc54314)
+
+**Target**: A2A Receptor Antagonist Design - **Design Task**: *De novo* structure-based design
+
+**Model**: GRU RNN (Input: SMILES, Output: SMILES) - Model is `Augmented Hill Climbing (AHC)` which is a modification of `REINVENT` that adds Hill-climbing by backpropagating only on the top 50% best molecules (by reward) per sampled batch
+
+**Optimization Algorithm Class**: Reinforcement learning
+
+**Hit Rate**: 8/10 have pKi < 10 μM
+
+**Outcome**: μM antagonist and selective against A2B
+
+**Notes**: Used Glide as the docking software which is proprietary. Through Glide, hydrogen-bond constraints were enforced. For some protein targets, an additional occupancy constraint was enforced. Docking was performed against 7 known A2A structures. Oracle budget was 12,800 which is amongst the most constrained in case studies with experimental validation. 2 co-crystal structures obtained for the most potent ligands.
 
 ------------------------------------------------------------------------------------------------------------
