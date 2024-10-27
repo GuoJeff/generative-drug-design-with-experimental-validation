@@ -618,7 +618,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ### 17. A small-molecule TNIK inhibitor targets fibrosis in preclinical and clinical models
 
-**Publication Date**: March 8, 2024 - [Paper Link](https://www.nature.com/articles/s41587-024-02143-0) - [Blog Post](https://insilico.com/blog/first_phase2)
+**Publication Date**: March 8, 2024 - [Paper Link 1](https://www.nature.com/articles/s41587-024-02143-0) - [Paper Link 2](https://pubs.acs.org/doi/10.1021/acs.jmedchem.4c01580) - [Blog Post](https://insilico.com/blog/first_phase2) - 
 
 **Target**: TNIK - **Design Task**: *De novo* structure-based design
 
@@ -885,26 +885,7 @@ In the end, *in vitro* studies using murine CDX model for human mantle cell lymp
 **Notes**: Uses commercially available building blocks and molecular generation follows reaction templates. Uses AutoDock Vina as the docking protocol which is open-source. *In vivo* validation.
 
 ------------------------------------------------------------------------------------------------------------
-
-### 32. AutoDesigner - Core Design, a De Novo Design Algorithm for Chemical Scaffolds: Application to the Design and Synthesis of Novel Selective Wee1 Inhibitors
-
-**Publication Date**: June 14, 2024 - [Pre-print Link](https://chemrxiv.org/engage/chemrxiv/article-details/666b21905101a2ffa883d62c)
-
-**Target**: Wee1 with improved selectivity against PLK1  - **Design Task**: *De novo* scaffold-based design
-
-**Model**: Enumeration
-
-**Optimization Algorithm Class**: Filtering by property values
-
-**Hit Rate**: 3/3 (100%)
-
-**Outcome**: µM inhibitor but with selectivity against PLK1 - **Most Potent Design**: IC50 Wee1 = 53.8 μM and IC50 PLK1 > 10,000 μM (Table 4)
-
-**Notes**: AutoDesigner is *generative* in a slightly different sense, in that it takes libraries of chemical moeities and attaches them, akin to enumeration.
-Uses relative free energy perturbation from Schrödinger (FEP+) combined with active learning. 
-
-------------------------------------------------------------------------------------------------------------
-### 33. Accelerated Discovery of Carbamate Cbl-b Inhibitors Using Generative AI Models and Structure-Based Drug Design
+### 32. Accelerated Discovery of Carbamate Cbl-b Inhibitors Using Generative AI Models and Structure-Based Drug Design
 
 **Publication Date**: August 12, 2024 - [Paper Link](https://pubs.acs.org/doi/10.1021/acs.jmedchem.4c01034)
 
@@ -920,6 +901,24 @@ Uses relative free energy perturbation from Schrödinger (FEP+) combined with ac
 
 **Notes**: LibINVENT designed 2 molecules which were of interest after FEP validation. Small modifications of these 2 compounds were made and then synthesized. Both were active and the most potent had IC50 1.2 μM. 
 A third compound was the result during chiral separation of one of the two synthesized compounds. This third compound was also tested with IC50 37 μM. The insights from these first three compounds inspired the remaining design campaign.
+
+------------------------------------------------------------------------------------------------------------
+### 33. AutoDesigner - Core Design, a De Novo Design Algorithm for Chemical Scaffolds: Application to the Design and Synthesis of Novel Selective Wee1 Inhibitors
+
+**Publication Date**: October 3, 2024 - [Paper Link](https://pubs.acs.org/doi/10.1021/acs.jcim.4c01031)
+
+**Target**: Wee1 with improved selectivity against PLK1  - **Design Task**: *De novo* scaffold-based design
+
+**Model**: Enumeration
+
+**Optimization Algorithm Class**: Filtering by property values
+
+**Hit Rate**: 3/3 (100%)
+
+**Outcome**: µM inhibitor but with selectivity against PLK1 - **Most Potent Design**: IC50 Wee1 = 58.3 nM and IC50 PLK1 > 10,000 μM (Table 4)
+
+**Notes**: AutoDesigner is *generative* in a slightly different sense, in that it takes libraries of chemical moeities and attaches them, akin to enumeration.
+Uses relative free energy perturbation from Schrödinger (FEP+) combined with active learning. 
 
 ------------------------------------------------------------------------------------------------------------
 ### 34. Modern hit-finding with structure-guided de novo design: identification of novel nanomolar A2A receptor ligands using reinforcement learning
