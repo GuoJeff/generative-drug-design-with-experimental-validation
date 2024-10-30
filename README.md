@@ -22,7 +22,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ***Please let me know if any examples are missing!*** 🙂
 
-**Fun fact (as of October 14, 2024)**: 25/50 examples are from 2024!
+**Fun fact (as of October 30, 2024)**: 26/51 examples are from 2024!
 
 <br>
 
@@ -876,7 +876,7 @@ In the end, *in vitro* studies using murine CDX model for human mantle cell lymp
 
 **Target**: Cbl-b  - **Design Task**: *De novo* scaffold-based design
 
-**Model**: LSTM RNN (Input: SMILES, Output: SMILES) - Model is `LibINVENT` which is part of `REINVENT` 
+**Model**: LSTM RNN (Input: SMILES, Output: SMILES) - Model is [LibINVENT](https://pubs.acs.org/doi/10.1021/acs.jcim.1c00469) which is part of `REINVENT` 
 
 **Optimization Algorithm Class**: Reinforcement learning
 
@@ -888,7 +888,24 @@ In the end, *in vitro* studies using murine CDX model for human mantle cell lymp
 A third compound was the result during chiral separation of one of the two synthesized compounds. This third compound was also tested with IC50 37 μM. The insights from these first three compounds inspired the remaining design campaign.
 
 ------------------------------------------------------------------------------------------------------------
-### 32. AutoDesigner - Core Design, a De Novo Design Algorithm for Chemical Scaffolds: Application to the Design and Synthesis of Novel Selective Wee1 Inhibitors
+### 32. Discovery of novel quinoline papain-like protease inhibitors for COVID-19 through topology constrained molecular generative model
+
+**Publication Date**: September 13, 2024 - [Pre-print Link](https://www.biorxiv.org/content/10.1101/2024.09.07.611841v2)
+
+**Target**: Papain-like protease (PLpro)  - **Design Task**: Scaffold hopping
+
+**Model**: GNN with GCN and GGNN blocks (Input: 2D Graph, Output: 2D Graph) - Model is [Tree-Invent](https://pubs.acs.org/doi/10.1021/acs.jcim.3c01626) and generation is autoregressive
+
+**Optimization Algorithm Class**: Reinforcement learning (using REINVENT's loss function)
+
+**Hit Rate**: 9/9 
+
+**Outcome**: µM inhibitor - **Most Potent Design**: IC50 PLpro = 0.0238 µM (Fig. 3b)
+
+**Notes**:  Based on the most potent Tree-Invent molecule (molecule 2 in the paper), a virtual screening library was created with commercial reagents. This library was screened using Glide docking and led to an experimentally validated nM potent compound. *In vivo* validation was achieved.
+
+------------------------------------------------------------------------------------------------------------
+### 33. AutoDesigner - Core Design, a De Novo Design Algorithm for Chemical Scaffolds: Application to the Design and Synthesis of Novel Selective Wee1 Inhibitors
 
 **Publication Date**: October 3, 2024 - [Paper Link](https://pubs.acs.org/doi/10.1021/acs.jcim.4c01031)
 
@@ -906,7 +923,7 @@ A third compound was the result during chiral separation of one of the two synth
 Uses relative free energy perturbation from Schrödinger (FEP+) combined with active learning. 
 
 ------------------------------------------------------------------------------------------------------------
-### 33. Modern hit-finding with structure-guided de novo design: identification of novel nanomolar A2A receptor ligands using reinforcement learning
+### 34. Modern hit-finding with structure-guided de novo design: identification of novel nanomolar A2A receptor ligands using reinforcement learning
 
 **Publication Date**: October 14, 2024 - [Pre-print Link](https://chemrxiv.org/engage/chemrxiv/article-details/6708fba651558a15efc54314)
 
@@ -924,7 +941,7 @@ Uses relative free energy perturbation from Schrödinger (FEP+) combined with ac
 
 ------------------------------------------------------------------------------------------------------------
 
-### 34. FragGen: Towards 3D Geometry Reliable Fragment-based Molecular Generation
+### 35. FragGen: Towards 3D Geometry Reliable Fragment-based Molecular Generation
 
 **Publication Date**: March 15, 2024 - [Pre-paper Link](https://arxiv.org/abs/2404.00014), October 16, 2024 - [Paper Link](https://pubs.rsc.org/en/Content/ArticleLanding/2024/SC/D4SC04620J)
 
