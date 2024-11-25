@@ -22,7 +22,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ***Please let me know if any examples are missing!*** 🙂
 
-**Fun fact (as of October 30, 2024)**: 26/51 examples are from 2024!
+**Fun fact (as of November 25, 2024)**: 28/53 examples are from 2024!
 
 <br>
 
@@ -301,15 +301,32 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 **Publication Date**: April 22, 2024 - [Paper Link](https://www.nature.com/articles/s41467-024-47613-w)
 
-**Target**: PPARγ - **Design Task**: *De novo* design
+**Target**: PPARγ - **Design Task**: *De novo* ligand- and structure-based design
 
-**Model**: Graph transformer-LSTM RNN (Input: Graph, Output: SMILES)
+**Model**: Graph transformer-LSTM RNN (Input: Graph, Output: SMILES) - model is named `DRAGONFLY`
 
 **Hit Rate**: 2/6 (33%)
 
 **Outcome**: µM agonist - **Most Potent Design**: PPARγ EC50 = 1.5 ± 0.2 µM and PPARδ EC50 = 0.24 ± 0.05 µM
  
 **Notes**: The model was fine-tuned with 1 known Nurr1 agonist which has an EC50 = 0.4 µM.
+
+------------------------------------------------------------------------------------------------------------
+# **2024**
+
+### 17. Combining de novo molecular design with semiempirical protein–ligand binding free energy calculation
+
+**Publication Date**: November 20, 2024 - [Paper Link](https://pubs.rsc.org/en/content/articlelanding/2024/ra/d4ra05422a)
+
+**Target**: AChE - **Design Task**: *De novo* ligand- and structure-based design
+
+**Model**: Used [DRAGONFLY](https://www.nature.com/articles/s41467-024-47613-w) (Graph transformer-LSTM RNN (Input: Graph, Output: SMILES)) which was previously developed with the authors
+
+**Hit Rate**: 1/1 (100%) - 6-step convergent synthesis
+
+**Outcome**: From the paper: "Specifically, compound 2 showed 31.6% (±0.8%) inhibition at 30 μM and 11% (±2%) inhibition at 10 μM" - **Most Potent Design**: 31.6% inhibition at 30 μM
+ 
+**Notes**: Explored chemical space around Huperzine A (known AChE inhibitor). Tried SMILES and SELFIES - generated 4 molecular libraries and filtered with a scoring function notably encompassing a bioactivity prediction model and RAScore (AiZynthFinder retrosynthesis model surrogate). Top molecules were docked with GOLD (proprietary software) and xTB (open-source semiempirical quantum chemistry software).
 
 ------------------------------------------------------------------------------------------------------------
 <br>
@@ -953,3 +970,19 @@ Uses relative free energy perturbation from Schrödinger (FEP+) combined with ac
 **Outcome**: µM inhibitor - **Most Potent Design**: IC50 = 20.3 μM
 
 **Notes**: Commercially available analogues were tested and were µM potent (IC50). Only 1 generated molecule was directly synthesized.
+
+------------------------------------------------------------------------------------------------------------
+
+### 36. Generative deep learning enables the discovery of phosphorylation-suppressed STAT3 inhibitors for non-small cell lung cancer therapy
+
+**Publication Date**: - [Pre-print Link](https://www.researchsquare.com/article/rs-5213622/v1), under review at `Springer Molecular Diversity`
+
+**Target**: STAT3 - **Design Task**: *De novo* design
+
+**Model**: LSTM RNN (Input: SMILES, Output: SMILES) - same model as used [here](https://www.nature.com/articles/s41467-022-34692-w)
+
+**Hit Rate**: Unclear - paper states 90 generated molecules were selected for synthesis with 2 possessing potent inhibitory activity at 1 μM
+
+**Outcome**: From the paper: "The results demonstrated that HG106 and HG110 significantly suppressed colony formation in all tested NSCLC cell lines at a concentration of 1 μM Fig.4A."
+ 
+**Notes**: Conditional generation resulted in a library of 15,678 generated molecules. Similar to the previous paper where the model was adapted [from](https://www.nature.com/articles/s41467-022-34692-w), the generated library was screened. Oracles include physico-chemical properties, docking (AutoDock 4.0), and MMGBSA.
