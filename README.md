@@ -22,7 +22,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ***Please let me know if any examples are missing!*** 🙂
 
-**Fun fact (as of November 25, 2024)**: 28/53 examples are from 2024!
+**Fun fact (as of November 25, 2024)**: 29/54 examples are from 2024!
 
 <br>
 
@@ -986,3 +986,21 @@ Uses relative free energy perturbation from Schrödinger (FEP+) combined with ac
 **Outcome**: From the paper: "The results demonstrated that HG106 and HG110 significantly suppressed colony formation in all tested NSCLC cell lines at a concentration of 1 μM Fig.4A."
  
 **Notes**: Conditional generation resulted in a library of 15,678 generated molecules. Similar to the previous paper where the model was adapted [from](https://www.nature.com/articles/s41467-022-34692-w), the generated library was screened. Oracles include physico-chemical properties, docking (AutoDock 4.0), and MMGBSA.
+
+------------------------------------------------------------------------------------------------------------
+
+### 37. ClickGen: Directed exploration of synthesizable chemical space via modular reactions and reinforcement learning
+
+**Publication Date**: November 22, 2024 - [Paper Link](https://www.nature.com/articles/s41467-024-54456-y)
+
+**Target**: PARP1 - **Design Task**: *De novo* design
+
+**Model**: Based on U-Net encoder-decoder architecture (Input: SMILES, Output: SMILES)
+
+**Optimization Algorithm Class**: Reinforcement Learning and Monte Carlo Tree Search (MCTS)
+
+**Hit Rate**: 2/3 (66%) - 1/3 has a reported IC50 of > 1,000 nM and a concrete measurement was not provided (see Fig. 8)
+
+**Outcome**: µM inhibitor - **Most Potent Designs**: IC50 = 19.24 ± 1.63 nM
+
+**Notes**: Used Schrödinger's computational chemistry software (proprietary) - pharmacophore matching and Glide docking.
