@@ -22,7 +22,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ***Please let me know if any examples are missing!*** 🙂
 
-**Fun fact (as of November 25, 2024)**: 29/54 examples are from 2024!
+**Fun fact (as of December 13, 2024)**: 30/55 examples are from 2024!
 
 <br>
 
@@ -1004,3 +1004,21 @@ Uses relative free energy perturbation from Schrödinger (FEP+) combined with ac
 **Outcome**: µM inhibitor - **Most Potent Designs**: IC50 = 19.24 ± 1.63 nM
 
 **Notes**: Used Schrödinger's computational chemistry software (proprietary) - pharmacophore matching and Glide docking.
+
+------------------------------------------------------------------------------------------------------------
+
+### 38. Intestinal mucosal barrier repair and immune regulation with an AI-developed gut-restricted PHD inhibitor
+
+**Publication Date**: December 11, 2024 - [Paper Link](https://www.nature.com/articles/s41587-024-02503-w)
+
+**Target**: Hypoxia-inducible factor prolyl hydroxylase (PHD): Both PHD1 and PHD2 - **Design Task**: *De novo* structure-based design by fragment growth of privileged fragment
+
+**Model**: Chemistry42 (Input: Mixed, Output: Mixed). Mixed = SMILES, fingerprints, graphs
+
+**Optimization Algorithm Class**: Reinforcement learning
+
+**Hit Rate**: Unclear, the paper states 1 compound was generated and synthesized which was then further SAR optimized. Unclear if more than 1 was synthesized.
+
+**Outcome** nM inhibitor with *in vivo* validation - **Most Potent Design**: IC50 = 4 nM
+
+**Notes**: The IC50 4 nM compound was generated and then further SAR optimization led to ISM012-042 (improved ADMET). *In vivo* validation was achieved.
