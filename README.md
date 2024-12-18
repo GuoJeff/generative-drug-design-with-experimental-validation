@@ -1017,7 +1017,7 @@ Uses relative free energy perturbation from Schrödinger (FEP+) combined with ac
 
 **Optimization Algorithm Class**: Reinforcement learning
 
-**Hit Rate**: Unclear, the paper states 1 compound was generated and synthesized which was then further SAR optimized. Unclear if more than 1 was synthesized.
+**Hit Rate**: Unclear, the paper states 1 compound was generated and synthesized which was then further SAR optimized. According to this [source](https://www.newswire.ca/news-releases/insilico-medicine-announces-the-nomination-of-two-preclinical-candidates-for-phd2-12-months-after-program-initiation-887323550.html), in total, approximately 115 molecules were synthesized but perhaps some were not directly *generated*.
 
 **Outcome** nM inhibitor with *in vivo* validation - **Most Potent Design**: IC50 = 4 nM
 
