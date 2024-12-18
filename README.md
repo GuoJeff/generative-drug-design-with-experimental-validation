@@ -22,7 +22,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ***Please let me know if any examples are missing!*** 🙂
 
-**Fun fact (as of December 13, 2024)**: 30/55 examples are from 2024!
+**Fun fact (as of December 13, 2024)**: 31/56 examples are from 2024!
 
 <br>
 
@@ -1007,7 +1007,33 @@ Uses relative free energy perturbation from Schrödinger (FEP+) combined with ac
 
 ------------------------------------------------------------------------------------------------------------
 
-### 38. Intestinal mucosal barrier repair and immune regulation with an AI-developed gut-restricted PHD inhibitor
+### 38. Discovery of Pyridine-2-Carboxamides Derivatives as Potent and Selective HPK1 Inhibitors for the Treatment of Cancer
+
+**Publication Date**: November 25, 2024 - [Paper Link](https://pubs.acs.org/doi/10.1021/acs.jmedchem.4c02421)
+
+**Target**: Hematopoietic progenitor kinase 1 (HPK1) - **Design Task**: Scaffold hopping
+
+**Model**: Chemistry42 (Input: Mixed, Output: Mixed). Mixed = SMILES, fingerprints, graphs
+
+**Optimization Algorithm Class**: Reinforcement learning
+
+**Hit Rate**: 1/1 (100%)
+
+**Outcome** nM inhibitor - **Most Potent Design**: IC50 = 0.64 nM but moderate selectivity
+
+**Notes**: Chemistry42 generated 1 molecule which performs a scaffold hop on the previously reported [A-745 from AbbVie](https://pubs.acs.org/doi/full/10.1021/acschembio.1c00819). Further SAR optimization led to *in vivo* validation.
+
+**Extended Notes**: There is a series of 3 papers on HPK1 from Insilico Medicine, based on the following [Press Release](https://firstwordpharma.com/story/5922115): 
+
+[1: Target Validation using PandaOmics](https://www.sciencedirect.com/science/article/pii/S022352342400758X?via%3Dihub)
+
+[2: Medicinal Chemistry SAR](https://pubs.acs.org/doi/10.1021/acsmedchemlett.4c00434)
+
+[3: Generative Design with further SAR](https://pubs.acs.org/doi/10.1021/acs.jmedchem.4c02421)
+
+------------------------------------------------------------------------------------------------------------
+
+### 39. Intestinal mucosal barrier repair and immune regulation with an AI-developed gut-restricted PHD inhibitor
 
 **Publication Date**: December 11, 2024 - [Paper Link](https://www.nature.com/articles/s41587-024-02503-w)
 
