@@ -22,7 +22,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ***Please let me know if any examples are missing!*** 🙂
 
-**Fun fact (as of December 13, 2024)**: 31/56 examples are from 2024!
+**Fun fact (as of December 20, 2024)**: 32/57 examples are from 2024!
 
 <br>
 
@@ -312,7 +312,6 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 **Notes**: The model was fine-tuned with 1 known Nurr1 agonist which has an EC50 = 0.4 µM.
 
 ------------------------------------------------------------------------------------------------------------
-# **2024**
 
 ### 17. Combining de novo molecular design with semiempirical protein–ligand binding free energy calculation
 
@@ -320,13 +319,29 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 **Target**: AChE - **Design Task**: *De novo* ligand- and structure-based design
 
-**Model**: Used [DRAGONFLY](https://www.nature.com/articles/s41467-024-47613-w) (Graph transformer-LSTM RNN (Input: Graph, Output: SMILES)) which was previously developed with the authors
+**Model**: Used [DRAGONFLY](https://www.nature.com/articles/s41467-024-47613-w) (Graph transformer-LSTM RNN (Input: Graph, Output: SMILES)) which was previously developed by the authors
 
 **Hit Rate**: 1/1 (100%) - 6-step convergent synthesis
 
 **Outcome**: From the paper: "Specifically, compound 2 showed 31.6% (±0.8%) inhibition at 30 μM and 11% (±2%) inhibition at 10 μM" - **Most Potent Design**: 31.6% inhibition at 30 μM
  
 **Notes**: Explored chemical space around Huperzine A (known AChE inhibitor). Tried SMILES and SELFIES - generated 4 molecular libraries and filtered with a scoring function notably encompassing a bioactivity prediction model and RAScore (AiZynthFinder retrosynthesis model surrogate). Top molecules were docked with GOLD (proprietary software) and xTB (open-source semiempirical quantum chemistry software).
+
+------------------------------------------------------------------------------------------------------------
+
+### 18. AI-driven de-novo design and development of non-toxic DYRK1A inhibitors for Alzheimer’s disease
+
+**Publication Date**: December 20, 2024 - [Pre-print Link](https://chemrxiv.org/engage/chemrxiv/article-details/67618eed6dde43c9086f5ab8)
+
+**Target**: DYRK1A for Alzheimer's disease - **Design Task**: *De novo* structure-based design
+
+**Model**: Used [Hierarchical Graph Encoder-Decoder](https://proceedings.mlr.press/v119/jin20a.html) (Input: Graph, Output: Graph)
+
+**Hit Rate**: 1/1 (100%)
+
+**Outcome**: μM inhibitor - **Most Potent Design**: 41 ± 3 nM (triplicate assays)
+ 
+**Notes**: Trained an ensemble of QSAR models to property prediction. The generative model in total generated 5 batches of 10,000 molecules. After each generation cycle, the molecules were filtered with the QSAR models and similarity to known inhibitors. Molecules passing the filter were used for transfer learning on the model (by adding them to the initial training set and re-training). The best molecules (around 50) were docked (using Schrödinger Glide XP - *proprietary* software) and 1 selected for synthesis. 247 analogues of the synthesized molecule were also proposed and assessed by the predictive models - in the end, 7 were synthesized. Since these analogues were based on the selected molecule and not *generated*, they are not included in the hit rate here.
 
 ------------------------------------------------------------------------------------------------------------
 <br>
