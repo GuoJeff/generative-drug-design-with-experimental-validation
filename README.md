@@ -988,23 +988,7 @@ Uses relative free energy perturbation from Schrödinger (FEP+) combined with ac
 
 ------------------------------------------------------------------------------------------------------------
 
-### 36. Generative deep learning enables the discovery of phosphorylation-suppressed STAT3 inhibitors for non-small cell lung cancer therapy
-
-**Publication Date**: - [Pre-print Link](https://www.researchsquare.com/article/rs-5213622/v1), under review at `Springer Molecular Diversity`
-
-**Target**: STAT3 - **Design Task**: *De novo* design
-
-**Model**: LSTM RNN (Input: SMILES, Output: SMILES) - same model as used [here](https://www.nature.com/articles/s41467-022-34692-w)
-
-**Hit Rate**: Unclear - paper states 90 generated molecules were selected for synthesis with 2 possessing potent inhibitory activity at 1 μM
-
-**Outcome**: From the paper: "The results demonstrated that HG106 and HG110 significantly suppressed colony formation in all tested NSCLC cell lines at a concentration of 1 μM Fig.4A."
- 
-**Notes**: Conditional generation resulted in a library of 15,678 generated molecules. Similar to the previous paper where the model was adapted [from](https://www.nature.com/articles/s41467-022-34692-w), the generated library was screened. Oracles include physico-chemical properties, docking (AutoDock 4.0), and MMGBSA.
-
-------------------------------------------------------------------------------------------------------------
-
-### 37. ClickGen: Directed exploration of synthesizable chemical space via modular reactions and reinforcement learning
+### 36. ClickGen: Directed exploration of synthesizable chemical space via modular reactions and reinforcement learning
 
 **Publication Date**: November 22, 2024 - [Paper Link](https://www.nature.com/articles/s41467-024-54456-y)
 
@@ -1022,7 +1006,7 @@ Uses relative free energy perturbation from Schrödinger (FEP+) combined with ac
 
 ------------------------------------------------------------------------------------------------------------
 
-### 38. Discovery of Pyridine-2-Carboxamides Derivatives as Potent and Selective HPK1 Inhibitors for the Treatment of Cancer
+### 37. Discovery of Pyridine-2-Carboxamides Derivatives as Potent and Selective HPK1 Inhibitors for the Treatment of Cancer
 
 **Publication Date**: November 25, 2024 - [Paper Link](https://pubs.acs.org/doi/10.1021/acs.jmedchem.4c02421)
 
@@ -1048,7 +1032,7 @@ Uses relative free energy perturbation from Schrödinger (FEP+) combined with ac
 
 ------------------------------------------------------------------------------------------------------------
 
-### 39. Intestinal mucosal barrier repair and immune regulation with an AI-developed gut-restricted PHD inhibitor
+### 38. Intestinal mucosal barrier repair and immune regulation with an AI-developed gut-restricted PHD inhibitor
 
 **Publication Date**: December 11, 2024 - [Paper Link](https://www.nature.com/articles/s41587-024-02503-w)
 
@@ -1063,3 +1047,19 @@ Uses relative free energy perturbation from Schrödinger (FEP+) combined with ac
 **Outcome** nM inhibitor with *in vivo* validation - **Most Potent Design**: IC50 = 4 nM
 
 **Notes**: The IC50 4 nM compound was generated and then further SAR optimization led to ISM012-042 (improved ADMET). *In vivo* validation was achieved.
+
+------------------------------------------------------------------------------------------------------------
+
+### 39. Generative deep learning enables the discovery of phosphorylation-suppressed STAT3 inhibitors for non-small cell lung cancer therapy
+
+**Publication Date**: - [Paper Link](https://link.springer.com/article/10.1007/s11030-024-11067-5)
+
+**Target**: STAT3 - **Design Task**: *De novo* design
+
+**Model**: LSTM RNN (Input: SMILES, Output: SMILES) - same model as used [here](https://www.nature.com/articles/s41467-022-34692-w)
+
+**Hit Rate**: Unclear - paper states 90 generated molecules were selected for synthesis with 2 possessing potent inhibitory activity at 1 μM
+
+**Outcome**: From the paper: "The results demonstrated that HG106 and HG110 significantly suppressed colony formation in all tested NSCLC cell lines at a concentration of 1 μM Fig.4A."
+ 
+**Notes**: Conditional generation resulted in a library of 15,678 generated molecules. Similar to the previous paper where the model was adapted [from](https://www.nature.com/articles/s41467-022-34692-w), the generated library was screened. Oracles include physico-chemical properties, docking (AutoDock 4.0), and MMGBSA.
