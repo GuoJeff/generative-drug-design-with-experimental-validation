@@ -22,7 +22,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ***Please let me know if any examples are missing!*** 🙂
 
-**Fun fact (as of December 20, 2024)**: 32/57 examples are from 2024!
+**Fun fact (as of December 21, 2024)**: 33/58 examples are from 2024!
 
 <br>
 
@@ -1058,8 +1058,33 @@ Uses relative free energy perturbation from Schrödinger (FEP+) combined with ac
 
 **Model**: LSTM RNN (Input: SMILES, Output: SMILES) - same model as used [here](https://www.nature.com/articles/s41467-022-34692-w)
 
+**Optimization Algorithm Class**: Conditional generation
+
 **Hit Rate**: Unclear - paper states 90 generated molecules were selected for synthesis with 2 possessing potent inhibitory activity at 1 μM
 
 **Outcome**: From the paper: "The results demonstrated that HG106 and HG110 significantly suppressed colony formation in all tested NSCLC cell lines at a concentration of 1 μM Fig.4A."
  
 **Notes**: Conditional generation resulted in a library of 15,678 generated molecules. Similar to the previous paper where the model was adapted [from](https://www.nature.com/articles/s41467-022-34692-w), the generated library was screened. Oracles include physico-chemical properties, docking (AutoDock 4.0), and MMGBSA.
+
+------------------------------------------------------------------------------------------------------------
+
+### 40. Electron-density informed effective and reliable de novo molecular design and lead optimization with ED2Mol
+
+**Publication Date**: - [Pre-print Link](https://www.biorxiv.org/content/10.1101/2024.12.18.629081v1)
+
+**Target**: 3 Targets: FGFR3 orthosteric inhibitors, CDC42 allosteric inhibitors, and GCK allosteric activator - **Design Task**: *De novo* design and *lead optimization*
+
+**Model**: Uses a VAE and an equivariant GNN (EGNN) (Input: Graph/Geometry, Output: Graph/Geometry) - new model proposed in the paper is named `ED2Mol`
+
+**Optimization Algorithm Class**: Conditional generation
+
+**Hit Rate/Outcome**: 
+
+`FGFR3 Orthosteric Inhibitors`: 50,000 molecules generated, filtered, and clustered. 5 molecules selected (unclear how many synthesized) - $K_D$ = 599 μM. A crystal structure was obtained and informed subsequent lead optimization. The hinge-binding moiety was fixed to generate a 10,000 more molecules and filtered again. 1 molecule selected for synthesis - $K_D$ = 61.4 μM
+
+`CDC42 Allosteric Inhibitors`: 50,000 molecules generated, filtered, and clustered. 2 molecules selected for synthesis - IC50 = 47.58 ± 3.71 μM and 111.63 ± 0.90 μM.
+
+`GCK Allosteric Activator`: Based on a known compound, 10,000 molecules were generated, filtered, and clustered for lead optimization. 2 molecules selected for synthesis - EC50 = 290 nM and 150 nM. Original compound has an EC50 = 1810 nM.
+
+ 
+**Notes**: One of the relatively few works using electron density to inform the generation of molecules.
