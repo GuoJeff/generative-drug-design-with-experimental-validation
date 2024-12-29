@@ -22,7 +22,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ***Please let me know if any examples are missing!*** 🙂
 
-**Fun fact (as of December 21, 2024)**: 33/58 examples are from 2024!
+**Fun fact (as of December 23, 2024)**: 34/59 examples are from 2024!
 
 <br>
 
@@ -342,6 +342,22 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 **Outcome**: μM inhibitor - **Most Potent Design**: 41 ± 3 nM (triplicate assays)
  
 **Notes**: Trained an ensemble of QSAR models to property prediction. The generative model in total generated 5 batches of 10,000 molecules. After each generation cycle, the molecules were filtered with the QSAR models and similarity to known inhibitors. Molecules passing the filter were used for transfer learning on the model (by adding them to the initial training set and re-training). The best molecules (around 50) were docked (using Schrödinger Glide XP - *proprietary* software) and 1 selected for synthesis. 247 analogues of the synthesized molecule were also proposed and assessed by the predictive models - in the end, 7 were synthesized. Since these analogues were based on the selected molecule and not *generated*, they are not included in the hit rate here.
+
+------------------------------------------------------------------------------------------------------------
+
+### 19. Artificial intelligence-enabled discovery of a RIPK3 inhibitor with neuroprotective effects in an acute glaucoma mouse model
+
+**Publication Date**: December 23, 2024 - [Paper Link](https://journals.lww.com/cmj/fulltext/9900/artificial_intelligence_enabled_discovery_of_a.1374.aspx)
+
+**Target**: RIPK3 - **Design Task**: *De novo*
+
+**Model**: Used ChatGPT 3.5 March 2023 (Input: Natural language text, Output: Natural language text)
+
+**Hit Rate**: N/A (see Notes)
+
+**Outcome**: N/A (see Notes)
+ 
+**Notes**: Used ChatGPT to generate molecules (15 were taken after cross-validating with PubChem - see Supplementary Figure 1). 5/15 compounds were selected for further validation. **These 5 compounds are known compounds previously reported in  literature**. 3 open-source models ([GraphDTA](https://academic.oup.com/bioinformatics/article/37/8/1140/5942970), [MGraphDTA](https://pubs.rsc.org/en/content/articlelanding/2022/sc/d1sc05180f), [WGNNDTA](https://link.springer.com/article/10.1186/s12864-022-08648-9)) were used to predict the affinity of the generated molecules. Discovery Studio 2019 (BIOVIA) was used to perform docking and molecular dynamics simulations to validate the predicted affinities and for ADMET prediction. *In vitro* and *in vivo* validation was performed.
 
 ------------------------------------------------------------------------------------------------------------
 <br>
