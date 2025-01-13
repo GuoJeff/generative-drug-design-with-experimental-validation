@@ -24,7 +24,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ## Number of papers by year (# / total)
 
-**Before 2024**: 25/59
+**Before 2024**: 25/60
 
 **2024**: 34/60
 
