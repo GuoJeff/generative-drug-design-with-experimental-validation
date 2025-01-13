@@ -22,7 +22,13 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ***Please let me know if any examples are missing!*** 🙂
 
-**Fun fact (as of December 23, 2024)**: 34/59 examples are from 2024!
+## Number of papers by year (# / total)
+
+**Before 2024**: 25/59
+
+**2024**: 34/60
+
+**2025**: 1/60
 
 <br>
 
@@ -1104,3 +1110,26 @@ Uses relative free energy perturbation from Schrödinger (FEP+) combined with ac
 
  
 **Notes**: One of the relatively few works using electron density to inform the generation of molecules.
+
+------------------------------------------------------------------------------------------------------------
+
+# **2025**
+
+### 41. Discovery of Potent, Highly Selective, and Orally Bioavailable MTA Cooperative PRMT5 Inhibitors with Robust In Vivo Antitumor Activity
+
+**Publication Date**: January 9, 2025 - [Paper Link](https://pubs.acs.org/doi/10.1021/acs.jmedchem.4c02732)
+
+**Target**: Protein arginine methyltransferase 5 (PRMT5) - **Design Task**: ligand-based design using fragment growth
+
+**Model**: Chemistry42 (Input: Mixed, Output: Mixed). Mixed = SMILES, fingerprints, graphs
+
+**Optimization Algorithm Class**: Reinforcement learning
+
+**Hit Rate**: 5/6 (83%) during round-1 generation. 8/8 (100%) during round-2 generation.
+
+**Outcome** nM potent with *in vivo* validation - **Most Potent Design**: MTAP-del viability IC50 = 95 nM
+
+**Notes**: Between round-1 and round-2 generation, some manual SAR was performed. From the most potent generated molecule to the final *in vivo* validated molecule, manual SAR was performed.
+
+------------------------------------------------------------------------------------------------------------
+
