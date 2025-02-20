@@ -24,11 +24,11 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ## Number of papers by year (# / total)
 
-**Before 2024**: 25/60
+**Before 2024**: 25/61
 
-**2024**: 34/60
+**2024**: 34/61
 
-**2025**: 1/60
+**2025**: 2/61
 
 <br>
 
@@ -364,6 +364,23 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 **Outcome**: N/A (see Notes)
  
 **Notes**: Used ChatGPT to generate molecules (15 were taken after cross-validating with PubChem - see Supplementary Figure 1). 5/15 compounds were selected for further validation. **These 5 compounds are known compounds previously reported in  literature**. 3 open-source models ([GraphDTA](https://academic.oup.com/bioinformatics/article/37/8/1140/5942970), [MGraphDTA](https://pubs.rsc.org/en/content/articlelanding/2022/sc/d1sc05180f), [WGNNDTA](https://link.springer.com/article/10.1186/s12864-022-08648-9)) were used to predict the affinity of the generated molecules. Discovery Studio 2019 (BIOVIA) was used to perform docking and molecular dynamics simulations to validate the predicted affinities and for ADMET prediction. *In vitro* and *in vivo* validation was performed.
+
+------------------------------------------------------------------------------------------------------------
+
+## 20. Deep lead optimization enveloped in protein pocket and its application in designing potent and selective ligands targeting LTK protein
+
+**Publication Date**: February 20, 2025 - [Paper Link](https://www.nature.com/articles/s42256-025-00997-w)
+
+**Target**: LTK - **Design Task**: *De novo*
+
+**Model**: Equivariant GNN (Input: Graph, Output: Graph)
+
+**Hit Rate**: 6/8 (75%) or 8/8 (100%) - 2 molecules had an IC50 of > 1 µM. It is unclear the concrete value.
+
+**Outcome**: nM inhibitor - **Most Potent Design**: IC50 = 6.60 nM on Ba/F3-CLIP1-LTK cells, EIC50 = 1.36 nM (Fig. 5) - demonstrated *in vivo* efficacy in mice
+ 
+**Notes**: The authors cite this [paper](https://www.nature.com/articles/s41586-021-04135-5) which finds that lorlatinib, a known ALK/ROS1 inhibitor according to this [paper](https://www.nature.com/articles/s41571-022-00639-9), can inhibit CLIP1-LTK. 
+           Based on this, the authors first fine-tuned their base model on known ALK inhibitors (1,612 actives and 608 inactives from BindingDB). The fine-tuned model generated 227 inhibitors and 13 were selected based on AutoDock Vina docking scores and predicted ADMET properties. The Supporting Information states that 8 were successfully synthesized but it is unclear if all 13 syntheses were attempted. *In vivo* validation was performed.
 
 ------------------------------------------------------------------------------------------------------------
 <br>
