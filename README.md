@@ -24,11 +24,11 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ## Number of papers by year (# / total)
 
-**Before 2024**: 25/61
+**Before 2024**: 25/62
 
-**2024**: 34/61
+**2024**: 34/62
 
-**2025**: 2/61
+**2025**: 3/62
 
 <br>
 
@@ -382,6 +382,22 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 **Notes**: The authors cite this [paper](https://www.nature.com/articles/s41586-021-04135-5) which finds that lorlatinib, a known ALK/ROS1 inhibitor according to this [paper](https://www.nature.com/articles/s41571-022-00639-9), can inhibit CLIP1-LTK. 
            Based on this, the authors first fine-tuned their base model on known ALK inhibitors (1,612 actives and 608 inactives from BindingDB). The fine-tuned model generated 227 inhibitors and 13 were selected based on AutoDock Vina docking scores and predicted ADMET properties. The Supporting Information states that 8 were successfully synthesized but it is unclear if all 13 syntheses were attempted. *In vivo* validation was performed.
 
+------------------------------------------------------------------------------------------------------------
+
+## 21. Accelerating discovery of bioactive ligands with pharmacophore-informed generative models
+
+**NOTE**: The paper discusses additional use cases such as pharmacophore-constrained generation and local chemical space exploration 
+          but the focus here is only on the case study with experimental validation
+
+**Publication Date**: March 10, 2025 - [Paper Link](https://www.nature.com/articles/s41467-025-56349-0)
+
+**Target**: PLK1 - **Design Task**: *De novo*
+
+**Model**: Based on "GPT" Decoder Transformer (Input: SMILES, Output: SMILES) - model explicitly trained on pharmacophoric information and is named `TransPharmer`
+
+**Outcome**: nM inhibitor - **Most Potent Design**: IC50 = 5.1 ± 1.7 nM (N=3 replicates) on PLK1 kinase ADP-Glo assay (Fig. 5b)
+ 
+**Notes**: `Onvansertib` is a known PLK1 inhibitor. The pharmacophoric fingerprint was used for conditional generation of 1 million SMILES with 0.7 temperature (more deterministic sampling). Removing invalid molecules and de-duplication resulted in 178,103 unique SMILES. This set of SMILES were filtered based on physico-chemical properties and structural similarity criteria (such as removing SMILES with pharmacophoric similarity and a similar scaffold to `Onvansertib`). Glide standard precision (SP) and extra precision (XP) docking were then used (proprietary docking software) to prioritize compounds. Best molecules were subjected to MM/GBSA and 4 compounds were selected for synthesis. The most potent compounds were also tested for selectivity.
 ------------------------------------------------------------------------------------------------------------
 <br>
 <br>
