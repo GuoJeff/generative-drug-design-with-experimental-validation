@@ -398,6 +398,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 **Outcome**: nM inhibitor - **Most Potent Design**: IC50 = 5.1 ± 1.7 nM (N=3 replicates) on PLK1 kinase ADP-Glo assay (Fig. 5b)
  
 **Notes**: `Onvansertib` is a known PLK1 inhibitor. The pharmacophoric fingerprint was used for conditional generation of 1 million SMILES with 0.7 temperature (more deterministic sampling). Removing invalid molecules and de-duplication resulted in 178,103 unique SMILES. This set of SMILES were filtered based on physico-chemical properties and structural similarity criteria (such as removing SMILES with pharmacophoric similarity and a similar scaffold to `Onvansertib`). Glide standard precision (SP) and extra precision (XP) docking were then used (proprietary docking software) to prioritize compounds. Best molecules were subjected to MM/GBSA and 4 compounds were selected for synthesis. The most potent compounds were also tested for selectivity.
+
 ------------------------------------------------------------------------------------------------------------
 <br>
 <br>
