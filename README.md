@@ -24,11 +24,11 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ## Number of papers by year (# / total)
 
-**Before 2024**: 25/62
+**Before 2024**: 25/63
 
-**2024**: 34/62
+**2024**: 34/63
 
-**2025**: 3/62
+**2025**: 4/63
 
 <br>
 
@@ -37,7 +37,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 2. Target - Design Task
 3. Model (Input: [Molecular Representation], Output: [Molecular Representation])
 4. Hit Rate (Number of synthesized examples with IC50 < 10µM or EC50 < 10µM) - **NOTE**: Designs that underwent manual domain-expert modifications are excluded
-5. Outcome (denoted nM if < 10 nM) - Most Potent Design (**NOTE**: Most potent *without* any domain-expert modifications. This is in contrast to our [Review Paper](https://rdcu.be/dLah8) which reports the **final** outcome)
+5. Outcome (denoted nM if < 100 nM) - Most Potent Design (**NOTE**: Most potent *without* any domain-expert modifications. This is in contrast to our [Review Paper](https://rdcu.be/dLah8) which reports the **final** outcome)
 6. Notes (if applicable)
 
 <br>
@@ -1167,3 +1167,20 @@ Uses relative free energy perturbation from Schrödinger (FEP+) combined with ac
 
 ------------------------------------------------------------------------------------------------------------
 
+### 42. Designing Macrocyclic Kinase Inhibitors Using Macrocycle Scaffold Hopping with Reinforced Learning (Macro-Hop)
+
+**Publication Date**: March 18, 2025 - [Paper Link](https://pubs.acs.org/doi/10.1021/acs.jmedchem.5c00087)
+
+**Target**: PDGFRα kinase - **Design Task**: Shape-based macrocycle scaffold hopping
+
+**Model**: RNN encoder-decoder (Input: SMILES, Output: SMILES) based on [LinkINVENT](https://pubs.rsc.org/en/content/articlelanding/2023/dd/d2dd00115b) - the model in the paper is named `Macro-Hop`
+
+**Optimization Algorithm Class**: Reinforcement learning (uses [REINVENT's](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-017-0235-x) algorithm)
+
+**Hit Rate**: 1/2 (50%)
+
+**Outcome** nM potent - **Most Potent Design**: IC50 = 37.5 nM
+
+**Notes**: The pre-training dataset of macrocycles is available from the authors [here](https://macro-db.dpbio.tech/). The reinforcement learning reward function used OpenEye's OMAGE and ROCS (proprietary software) to compute shape similarity between generated macrocycles and the reference. 
+           An initial macrocycle was identified through screening an in-house library. `Macro-Hop` was used to explore scaffold hops of this initial hit.
+------------------------------------------------------------------------------------------------------------
