@@ -1183,23 +1183,24 @@ Uses relative free energy perturbation from Schrödinger (FEP+) combined with ac
 
 **Outcome** nM potent - **Most Potent Design**: IC50 = 37.5 nM
 
-**Notes**: The pre-training dataset of macrocycles is available from the authors [here](https://macro-db.dpbio.tech/). The reinforcement learning reward function used OpenEye's OMAGE and ROCS (proprietary software) to compute shape similarity between generated macrocycles and the reference. 
-           An initial macrocycle was identified through screening an in-house library. `Macro-Hop` was used to explore scaffold hops of this initial hit.
+**Notes**: The pre-training dataset of macrocycles is available from the authors [here](https://macro-db.dpbio.tech/). The reinforcement learning reward function used OpenEye's OMAGE and ROCS (proprietary software) to compute shape similarity between generated macrocycles and the reference. An initial macrocycle was identified through screening an in-house library. `Macro-Hop` was used to explore scaffold hops of this initial hit.
+
 ------------------------------------------------------------------------------------------------------------
 
 ### 43. Novel Arbidol derivatives against SARS-CoV-2: a comprehensive approach using computer- and AI-assisted drug design
 
 **Publication Date**: March 27, 2025 - [ACS Spring 2025 Link](https://scimeetings.acs.org/exhibit/Novel-Arbidol-derivatives-against-SARS/4181135)
 
-**Target**: SARS-CoV-2 - **Design Task**: Shape-based macrocycle scaffold hopping
+**Target**: SARS-CoV-2 - **Design Task**: Structure-based design
 
 **Model**: RNN (Input: SMILES, Output: SMILES) - the specific model is named [MegaSyn](https://pubs.acs.org/doi/10.1021/acsomega.2c01404)
 
-**Optimization Algorithm Class**: Reinforcement learning (a variant of hill-climbing)
+**Optimization Algorithm Class**: Reinforcement learning (a variant of hill-climbing - see notes)
 
 **Hit Rate**: Unclear (23 were synthesized but the hit rate is unclear as the pre-print is not released yet)
 
 **Outcome** µM inhibitor - **Most Potent Designs**: EC50 of 0.73 µM against the SARS-CoV-2 omicron variant
 
-**Notes**: This was an oral presentation at ACS Spring 2025. 
+**Notes**: This was an oral presentation at ACS Spring 2025. Vanilla [Hill-climbing](https://openreview.net/forum?id=Bk0xiI1Dz) back-propagates with the top X% of sampled molecules based on reward, at a given epoch. The model in this work uses a modified Hill-climbing where the top X% of molecules is **carried** over to the next epoch. If epoch $t+1$ does not generate any better molecules than the previous top X%, then back-propagation occurs again using the same molecules. The authors of [MegaSyn](https://pubs.acs.org/doi/10.1021/acsomega.2c01404) state that the models hyperfocus on specific substructures. Multiple models are trained and results are aggregated to obtain more diverse sets.
+
 ------------------------------------------------------------------------------------------------------------
