@@ -24,11 +24,11 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ## Number of papers by year (# / total)
 
-**Before 2024**: 25/63
+**Before 2024**: 25/64
 
-**2024**: 34/63
+**2024**: 34/64
 
-**2025**: 4/63
+**2025**: 5/64
 
 <br>
 
@@ -1183,4 +1183,21 @@ Uses relative free energy perturbation from Schrödinger (FEP+) combined with ac
 
 **Notes**: The pre-training dataset of macrocycles is available from the authors [here](https://macro-db.dpbio.tech/). The reinforcement learning reward function used OpenEye's OMAGE and ROCS (proprietary software) to compute shape similarity between generated macrocycles and the reference. 
            An initial macrocycle was identified through screening an in-house library. `Macro-Hop` was used to explore scaffold hops of this initial hit.
+------------------------------------------------------------------------------------------------------------
+
+### 43. Novel Arbidol derivatives against SARS-CoV-2: a comprehensive approach using computer- and AI-assisted drug design
+
+**Publication Date**: March 27, 2025 - [ACS Spring 2025 Link](https://scimeetings.acs.org/exhibit/Novel-Arbidol-derivatives-against-SARS/4181135)
+
+**Target**: SARS-CoV-2 - **Design Task**: Shape-based macrocycle scaffold hopping
+
+**Model**: RNN (Input: SMILES, Output: SMILES) - the specific model is named [MegaSyn](https://pubs.acs.org/doi/10.1021/acsomega.2c01404)
+
+**Optimization Algorithm Class**: Reinforcement learning (a variant of hill-climbing)
+
+**Hit Rate**: Unclear (23 were synthesized but the hit rate is unclear as the pre-print is not released yet)
+
+**Outcome** µM inhibitor - **Most Potent Designs**: EC50 of 0.73 µM against the SARS-CoV-2 omicron variant
+
+**Notes**: This was an oral presentation at ACS Spring 2025. 
 ------------------------------------------------------------------------------------------------------------
