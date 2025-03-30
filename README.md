@@ -367,6 +367,8 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ------------------------------------------------------------------------------------------------------------
 
+# **2025**
+
 ## 20. Deep lead optimization enveloped in protein pocket and its application in designing potent and selective ligands targeting LTK protein
 
 **Publication Date**: February 20, 2025 - [Paper Link](https://www.nature.com/articles/s42256-025-00997-w)
