@@ -24,11 +24,11 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ## Number of papers by year (# / total)
 
-**Before 2024**: 25/64
+**Before 2024**: 25/65
 
-**2024**: 34/64
+**2024**: 34/65
 
-**2025**: 5/64
+**2025**: 6/65
 
 <br>
 
@@ -37,7 +37,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 2. Target - Design Task
 3. Model (Input: [Molecular Representation], Output: [Molecular Representation])
 4. Hit Rate (Number of synthesized examples with IC50 < 10µM or EC50 < 10µM) - **NOTE**: Designs that underwent manual domain-expert modifications are excluded
-5. Outcome (denoted nM if < 100 nM) - Most Potent Design (**NOTE**: Most potent *without* any domain-expert modifications. This is in contrast to our [Review Paper](https://rdcu.be/dLah8) which reports the **final** outcome)
+5. Outcome (denoted nM if < 100 nM) - Most Potent Design (**NOTE**: Most potent *without* any domain-expert modifications. This is in contrast to our [Review Paper](https://rdcu.be/dLah8) which reports the **final** outcome). Finally, *in vivo* validation is noted here and is not restricted to a *generated molecule*.
 6. Notes (if applicable)
 
 <br>
@@ -590,7 +590,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 **Hit Rate**: 6/6
 
-**Outcome**: µM inhibitor - **Most Potent Design**: IC50 = 0.023 μM
+**Outcome**: nM inhibitor - **Most Potent Design**: IC50 = 0.023 μM / 23 nM
 
 **Notes**: Used an AlphaFold structure for structure-based design.
 
@@ -1187,7 +1187,25 @@ Uses relative free energy perturbation from Schrödinger (FEP+) combined with ac
 
 ------------------------------------------------------------------------------------------------------------
 
-### 43. Novel Arbidol derivatives against SARS-CoV-2: a comprehensive approach using computer- and AI-assisted drug design
+### 43. Discovery of Novel SIK2/3 Inhibitors for the Potential Treatment of MEF2C+ Acute Myeloid Leukemia (AML)
+
+**Publication Date**: March 20, 2025 - [Paper Link](https://pubs.acs.org/doi/full/10.1021/acs.jmedchem.4c03225)
+
+**Target**: SIK2/3 - **Design Task**: Structure- and Pharmacophore-based hit optimization
+
+**Model**: Chemistry42 (Input: Mixed, Output: Mixed). Mixed = SMILES, fingerprints, graphs
+
+**Optimization Algorithm Class**: Reinforcement learning
+
+**Hit Rate**: 3/3 (100%)
+
+**Outcome** nM inhibitor with *in vivo* validation - **Most Potent Designs**: IC50 SIK1 = 85 nM / SIK2 = 7.2 nM / SIK3 =  8.7 nM
+
+**Notes**: This paper describes subsequent efforts building on [previous work](https://www.sciencedirect.com/science/article/pii/S0968089623002626) by the same authors that identified a promising hit molecule with IC50 = 0.023 μM. See Figure 2 - the generation focused on modifying the "solvent" and "P-loop" areas. Pharmacophore templates were extracted from these regions and used to guide generation. Docking performed with Molecular Operating Environment (MOE) software (proprietary)
+
+------------------------------------------------------------------------------------------------------------
+
+### 44. Novel Arbidol derivatives against SARS-CoV-2: a comprehensive approach using computer- and AI-assisted drug design
 
 **Publication Date**: March 27, 2025 - [ACS Spring 2025 Link](https://scimeetings.acs.org/exhibit/Novel-Arbidol-derivatives-against-SARS/4181135)
 
@@ -1199,8 +1217,9 @@ Uses relative free energy perturbation from Schrödinger (FEP+) combined with ac
 
 **Hit Rate**: Unclear (23 were synthesized but the hit rate is unclear as the pre-print is not released yet)
 
-**Outcome** µM inhibitor - **Most Potent Designs**: EC50 of 0.73 µM against the SARS-CoV-2 omicron variant
+**Outcome** µM inhibitor with *in vivo* validation - **Most Potent Designs**: EC50 of 0.73 µM against the SARS-CoV-2 omicron variant
 
 **Notes**: This was an oral presentation at ACS Spring 2025. Vanilla [Hill-climbing](https://openreview.net/forum?id=Bk0xiI1Dz) back-propagates with the top X% of sampled molecules based on reward, at a given epoch. The model in this work uses a modified Hill-climbing where the top X% of molecules is **carried** over to the next epoch. If epoch $t+1$ does not generate any better molecules than the previous top X%, then back-propagation occurs again using the same molecules. The authors of [MegaSyn](https://pubs.acs.org/doi/10.1021/acsomega.2c01404) state that the models hyperfocus on specific substructures. Multiple models are trained and results are aggregated to obtain more diverse sets.
 
 ------------------------------------------------------------------------------------------------------------
+
