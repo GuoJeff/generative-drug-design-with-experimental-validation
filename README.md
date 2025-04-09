@@ -24,11 +24,11 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ## Number of papers by year (# / total)
 
-**Before 2024**: 25/65
+**Before 2024**: 25/66
 
-**2024**: 34/65
+**2024**: 34/66
 
-**2025**: 6/65
+**2025**: 7/66
 
 <br>
 
@@ -397,11 +397,31 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 **Model**: Based on "GPT" Decoder Transformer (Input: SMILES, Output: SMILES) - model explicitly trained on pharmacophoric information and is named `TransPharmer`
 
+**Hit Rate**: 3/4 (75%)
+
 **Outcome**: nM inhibitor - **Most Potent Design**: IC50 = 5.1 ± 1.7 nM (N=3 replicates) on PLK1 kinase ADP-Glo assay (Fig. 5b)
  
 **Notes**: `Onvansertib` is a known PLK1 inhibitor. The pharmacophoric fingerprint was used for conditional generation of 1 million SMILES with 0.7 temperature (more deterministic sampling). Removing invalid molecules and de-duplication resulted in 178,103 unique SMILES. This set of SMILES were filtered based on physico-chemical properties and structural similarity criteria (such as removing SMILES with pharmacophoric similarity and a similar scaffold to `Onvansertib`). Glide standard precision (SP) and extra precision (XP) docking were then used (proprietary docking software) to prioritize compounds. Best molecules were subjected to MM/GBSA and 4 compounds were selected for synthesis. The most potent compounds were also tested for selectivity.
 
 ------------------------------------------------------------------------------------------------------------
+
+## 22. Design, synthesis and bio-evaluation of 2,5-disubstituted thiazole derivatives for potential treatment of acute myeloid leukemia through targeting CDK9
+
+**Publication Date**: April 5, 2025 - [Paper Link](https://www.sciencedirect.com/science/article/pii/S0045206825003165#bb0175)
+
+**Target**: CDK9 - **Design Task**: *De novo* fragment linking
+
+**Model**: Encoder-decoder transformer (Input: SMILES, Output: SMILES) - Model is [SyntaLinker-Hybrid](https://www.sciencedirect.com/science/article/pii/S266731852200006X)
+
+**Hit Rate**: 1/1 (100%)
+
+**Outcome**: μM inhibitor - **Most Potent Design**: IC50 = 1.139 μM
+ 
+**Notes**: [SyntaLinker](https://pubs.rsc.org/en/content/articlelanding/2020/sc/d0sc03126g) is a model that takes as input 2 terminal fragments and generates a linker connecting them. The model used in this paper, `SyntaLinker-Hybrid`, extends this model by adding transfer learning and "fragment hybridization". 
+           Transfer learning on active compounds bias the model's distribution. "Fragment hybridization" takes terminal fragments from known actives and generates *de novo* linkers. Details on the workflow of `SyntaLinker-Hybrid` as used in this paper are limited and the paper only states that **Compound A4** was indentified using this model.
+
+------------------------------------------------------------------------------------------------------------
+
 <br>
 <br>
 <br>
