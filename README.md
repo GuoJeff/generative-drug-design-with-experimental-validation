@@ -24,11 +24,11 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ## Number of papers by year (# / total)
 
-**Before 2024**: 25/66
+**Before 2024**: 25/67
 
-**2024**: 34/66
+**2024**: 35/67
 
-**2025**: 7/66
+**2025**: 7/67
 
 <br>
 
@@ -319,7 +319,41 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ------------------------------------------------------------------------------------------------------------
 
-### 17. Combining de novo molecular design with semiempirical protein–ligand binding free energy calculation
+### 17. Automated design of multi-target ligands by generative deep learning
+
+**Publication Date**: September 11, 2024 - [Paper Link](https://www.nature.com/articles/s41467-024-52060-8)
+
+**Target**: Pairs of proteins (FXR+sEH, FXR+THRβ, PPARδ+sEH, AT1+sEH, FFAR1+sEH, AT1+FFAR1) - **Design Task**: *De novo* structure-based design for **dual ligands (targeting both proteins in the pairs)**
+
+**Model**: LSTM RNN (Input: SMILES, Output: SMILES)
+
+**Hit Rate**: **Note**: In this repo, molecules with potency < 10 µM are considered actives. In this specific case, since the design task is dual activity ligands, if the potency on one target is < 10 µM but > 10 µM on the other, this will still be considered a hit
+
+**Generative Design Part 1 (see notes)**
+
+FXR+sEH (2/3, 67%)
+
+FXR+THRβ (1/3, 33%)
+
+PPARδ+sEH (2/2, 100% **Note**: 1 extra generated compound here but it possessed a tert-butyloxy group which was *replaced* by a tert-butyl. This involved human intervention so it is not considered a *generated* hit)
+
+**Generative Design Part 2**
+
+AT1+sEH (1/1, 100%)
+
+FFAR1+sEH (N/A, *Note** 1 generated compound was synthesized but the cyclopropyl group was replaced by ethyl. This involved human intervention so it is not considered a *generated* hit)
+
+AT1+FFAR1 (1/1, 100%)
+
+**Note**: None of the compounds in **Part 2** exhibited *dual* activity
+
+**Outcome**: Generally µM affinity - **Most Potent Design**: Since the compounds are meant to be dual activity, no numbers are reported here to not bias the reported number towards a particular target. See Table 1 in the paper.
+ 
+**Notes**: In general, the workflow was extracting known actives from BindingDB and performing clustering. **Generative Design Part 1** focused on the 3 pairs of targets which have known actives overlapping in chemical space. **Generative Design Part 2** tackled protein pairs with less overlap of known actives.
+
+------------------------------------------------------------------------------------------------------------
+
+### 18. Combining de novo molecular design with semiempirical protein–ligand binding free energy calculation
 
 **Publication Date**: November 20, 2024 - [Paper Link](https://pubs.rsc.org/en/content/articlelanding/2024/ra/d4ra05422a)
 
@@ -335,7 +369,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ------------------------------------------------------------------------------------------------------------
 
-### 18. AI-driven de-novo design and development of non-toxic DYRK1A inhibitors for Alzheimer’s disease
+### 19. AI-driven de-novo design and development of non-toxic DYRK1A inhibitors for Alzheimer’s disease
 
 **Publication Date**: December 20, 2024 - [Pre-print Link](https://chemrxiv.org/engage/chemrxiv/article-details/67618eed6dde43c9086f5ab8)
 
@@ -351,7 +385,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ------------------------------------------------------------------------------------------------------------
 
-### 19. Artificial intelligence-enabled discovery of a RIPK3 inhibitor with neuroprotective effects in an acute glaucoma mouse model
+### 20. Artificial intelligence-enabled discovery of a RIPK3 inhibitor with neuroprotective effects in an acute glaucoma mouse model
 
 **Publication Date**: December 23, 2024 - [Paper Link](https://journals.lww.com/cmj/fulltext/9900/artificial_intelligence_enabled_discovery_of_a.1374.aspx)
 
@@ -369,7 +403,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 # **2025**
 
-## 20. Deep lead optimization enveloped in protein pocket and its application in designing potent and selective ligands targeting LTK protein
+## 21. Deep lead optimization enveloped in protein pocket and its application in designing potent and selective ligands targeting LTK protein
 
 **Publication Date**: February 20, 2025 - [Paper Link](https://www.nature.com/articles/s42256-025-00997-w)
 
@@ -386,7 +420,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ------------------------------------------------------------------------------------------------------------
 
-## 21. Accelerating discovery of bioactive ligands with pharmacophore-informed generative models
+## 22. Accelerating discovery of bioactive ligands with pharmacophore-informed generative models
 
 **NOTE**: The paper discusses additional use cases such as pharmacophore-constrained generation and local chemical space exploration 
           but the focus here is only on the case study with experimental validation
@@ -405,7 +439,7 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ------------------------------------------------------------------------------------------------------------
 
-## 22. Design, synthesis and bio-evaluation of 2,5-disubstituted thiazole derivatives for potential treatment of acute myeloid leukemia through targeting CDK9
+## 23. Design, synthesis and bio-evaluation of 2,5-disubstituted thiazole derivatives for potential treatment of acute myeloid leukemia through targeting CDK9
 
 **Publication Date**: April 5, 2025 - [Paper Link](https://www.sciencedirect.com/science/article/pii/S0045206825003165#bb0175)
 
