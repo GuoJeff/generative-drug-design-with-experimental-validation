@@ -371,7 +371,7 @@ AT1+FFAR1 (1/1, 100%)
 
 ### 19. AI-driven de-novo design and development of non-toxic DYRK1A inhibitors for Alzheimer’s disease
 
-**Publication Date**: December 20, 2024 - [Pre-print Link](https://chemrxiv.org/engage/chemrxiv/article-details/67618eed6dde43c9086f5ab8)
+**Publication Date**: December 20, 2024 - [Pre-print Link](https://chemrxiv.org/engage/chemrxiv/article-details/67618eed6dde43c9086f5ab8), Published on May 3, 2025 - [Paper](https://pubs.acs.org/doi/10.1021/acs.jmedchem.5c00512)
 
 **Target**: DYRK1A for Alzheimer's disease - **Design Task**: *De novo* structure-based design
 
@@ -379,9 +379,9 @@ AT1+FFAR1 (1/1, 100%)
 
 **Hit Rate**: 1/1 (100%)
 
-**Outcome**: μM inhibitor - **Most Potent Design**: 41 ± 3 nM (triplicate assays)
+**Outcome**: nM inhibitor - **Most Potent Design**: 41 ± 3 nM (triplicate assays)
  
-**Notes**: Trained an ensemble of QSAR models to property prediction. The generative model in total generated 5 batches of 10,000 molecules. After each generation cycle, the molecules were filtered with the QSAR models and similarity to known inhibitors. Molecules passing the filter were used for transfer learning on the model (by adding them to the initial training set and re-training). The best molecules (around 50) were docked (using Schrödinger Glide XP - *proprietary* software) and 1 selected for synthesis. 247 analogues of the synthesized molecule were also proposed and assessed by the predictive models - in the end, 7 were synthesized. Since these analogues were based on the selected molecule and not *generated*, they are not included in the hit rate here.
+**Notes**: Trained an ensemble of QSAR models to property prediction. The generative model in total generated 5 batches of 10,000 molecules. After each generation cycle, the molecules were filtered with the QSAR models and similarity to known inhibitors. Molecules passing the filter were used for transfer learning on the model (by adding them to the initial training set and re-training). The best molecules (around 50) were docked (using Schrödinger Glide XP - *proprietary* software) and 1 selected for synthesis. 229 derivatives of the synthesized molecule were also proposed and assessed by the predictive models - in the end, 7 more were synthesized. Since these analogues were based on the selected molecule and not *generated*, they are not included in the hit rate here.
 
 ------------------------------------------------------------------------------------------------------------
 
