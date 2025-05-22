@@ -24,11 +24,11 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ## Number of papers by year (# / total)
 
-**Before 2024**: 25/67
+**Before 2024**: 25/68
 
-**2024**: 35/67
+**2024**: 35/68
 
-**2025**: 7/67
+**2025**: 8/68
 
 <br>
 
@@ -1277,3 +1277,27 @@ Uses relative free energy perturbation from Schrödinger (FEP+) combined with ac
 
 ------------------------------------------------------------------------------------------------------------
 
+### 45. Discovery of Novel Inhibitors for WD Repeat-Containing Protein 5 (WDR5)-MYC Protein-Protein Interaction
+
+**Publication Date**: May 21, 2025 - [Paper Link](https://onlinelibrary.wiley.com/doi/10.1111/cbdd.70129)
+
+**Target**: WD Repeat-Containing Protein 5 (WDR5)-MYC - **Design Task**: Structure- and ligand-based design
+
+**Model**: Chemistry42 (Input: Mixed, Output: Mixed). Mixed = SMILES, fingerprints, graphs
+
+**Optimization Algorithm Class**: Reinforcement learning
+
+**Hit Rate**: 
+
+Structure-based approach: 2/3 (66%)* see Notes.
+
+Ligand-based approach: 2/2 (100%)
+
+**Outcome** µM inhibitor - **Most Potent Designs**: IC50 of 1.91 µM (from ligand-based approach)
+
+**Notes**: The same crystal structure information was used as the starting point for structure- and ligand-based design. 
+
+*In the structure-based approach, the paper states that further generation of derivatives of one of the validated generated molecules did not improve activity. 
+However, it is unclear how many of these derivatives were made or if they were just not *predicted* to be more potent.
+
+------------------------------------------------------------------------------------------------------------
