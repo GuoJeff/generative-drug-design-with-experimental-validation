@@ -24,11 +24,11 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ## Number of papers by year (# / total)
 
-**Before 2024**: 25/68
+**Before 2024**: 25/70
 
-**2024**: 35/68
+**2024**: 35/70
 
-**2025**: 8/68
+**2025**: 10/70
 
 <br>
 
@@ -1277,7 +1277,31 @@ Uses relative free energy perturbation from Schrödinger (FEP+) combined with ac
 
 ------------------------------------------------------------------------------------------------------------
 
-### 45. Discovery of Novel Inhibitors for WD Repeat-Containing Protein 5 (WDR5)-MYC Protein-Protein Interaction
+### 45. A novel, covalent broad-spectrum inhibitor targeting human coronavirus Mpro
+
+**Publication Date**: May 15, 2025 - [Paper Link](https://www.nature.com/articles/s41467-025-59870-4)
+
+**Target**: SARS-CoV-2 main protease (Mpro) - **Design Task**: Structure- and ligand-based design
+
+**Model**: Chemistry42 (Input: Mixed, Output: Mixed). Mixed = SMILES, fingerprints, graphs
+
+**Optimization Algorithm Class**: Reinforcement learning
+
+**Hit Rate**: 2/2 (100%) - However, it is unclear if other *generated* molecules were also synthesized and tested
+
+**Outcome** nM inhibitor with *in vivo* validation - **Most Potent Designs**: IC50 (N=2 replicates) - Compound 1A: 61 ± 1 nM and Compound 1B: 121 ± 7 nM
+
+**Notes**: Molecular design proceeded through 3 rounds and not all rounds involved *generative* design. The hit rates and outcomes reported above are for the *generated* molecules.
+
+**Round 1:** Screening of a "pre-filtered vendor stock" (as written in the paper) following a structure-based and pharmacophore approach. The best compound was 0.98 µM.
+
+**Round 2: Hit expansion and optimization** Starting from the 0.98 µM hit from round 1 virtual screening, its docked pose was used as a template. The objective function used pharmacophore and shape features. This hit compound had a ***"chloroacetamide warhead"*** and it is implied that generated molecules also contained this moeity which has stability concerns. Therefore a 3rd round of generative design was performed replacing this ***"chloroacetamide warhead"*** with ***"α-chlorofluoroacetamide warhead"***.
+
+**Round 3: Hit expansion and optimization** Same set-up as Round 2 except with ***"α-chlorofluoroacetamide warhead"*** instead of ***"chloroacetamide warhead"***. 2 generated molecules (compounds 1A and 1B) were experimentally validated followed by manual modifications on them to improve ADMET properties (compounds 2 and 3). In the end, compound 3 was selected as a pre-clinical candidate (**ISM3312**) and Phase 1 clinical trials completed in China.
+
+------------------------------------------------------------------------------------------------------------
+
+### 46. Discovery of Novel Inhibitors for WD Repeat-Containing Protein 5 (WDR5)-MYC Protein-Protein Interaction
 
 **Publication Date**: May 21, 2025 - [Paper Link](https://onlinelibrary.wiley.com/doi/10.1111/cbdd.70129)
 
@@ -1293,7 +1317,7 @@ Structure-based approach: 2/3 (66%)* see Notes.
 
 Ligand-based approach: 2/2 (100%)
 
-**Outcome** µM inhibitor - **Most Potent Designs**: IC50 of 1.91 µM (from ligand-based approach)
+**Outcome** µM inhibitor - **Most Potent Designs**: IC50 1.91 µM (from ligand-based approach)
 
 **Notes**: The same crystal structure information was used as the starting point for structure- and ligand-based design. 
 
@@ -1301,3 +1325,20 @@ Ligand-based approach: 2/2 (100%)
 However, it is unclear how many of these derivatives were made or if they were just not *predicted* to be more potent.
 
 ------------------------------------------------------------------------------------------------------------
+
+### 47. Oral ENPP1 inhibitor designed using generative AI as next generation STING modulator for solid tumors
+
+**Publication Date**: May 23, 2025 - [Paper Link](https://www.nature.com/articles/s41467-025-59874-0)
+
+**Target**: Ectonucleotide Pyrophosphatase/Phosphodiesterase 1 (ENPP1) - **Design Task**: Structure-based design
+
+**Model**: Chemistry42 (Input: Mixed, Output: Mixed). Mixed = SMILES, fingerprints, graphs
+
+**Optimization Algorithm Class**: Reinforcement learning
+
+**Hit Rate**: 1/1 (100%) - However, it is unclear if other *generated* molecules were also synthesized and tested
+
+**Outcome** nM inhibitor with *in vivo* validation - **Most Potent Designs**: IC50 2.55 nM (The *generated* active designated **ISM7516**)
+
+**Notes**: Initial structure-based generative design led to the experimental validation of **ISM7516**. Subsequent molecular dynamics (MD) probed the effect of small chemical group changes and led to an optimized inhibitor (**ISM3576** with IC50 0.10 nM). Note that several modifications were tested from this MD workflow (see Supplementary Figure 5). However, **ISM3576** had indicators of potential undesirable drug-drug interations. Further molecular dynamics led to the experimental validation of **ISM5939** with IC50 0.45 nM with improved ADMET properties and *in vivo* pharmacokinetics
+
