@@ -760,6 +760,8 @@ AT1+FFAR1 (1/1, 100%)
 
 ***Notably, Phase 1 clinical trial results were reported and this molecule is the first generative design to progress to phase 2 clinical trials.***
 
+***June 3, 2025 update: Positive phase 2a clinical trials results reported in [Paper](https://www.nature.com/articles/s41591-025-03743-2) with more information [here](https://clinicaltrials.gov/study/NCT05938920)***
+
 ------------------------------------------------------------------------------------------------------------
 
 ### 17. Accelerating factor Xa inhibitor discovery with a de novo drug design pipeline
