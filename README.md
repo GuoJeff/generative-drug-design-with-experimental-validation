@@ -24,11 +24,11 @@ The review article is the result of an awesome collaboration with [Yuanqi Du](ht
 
 ## Number of papers by year (# / total)
 
-**Before 2024**: 25/70
+**Before 2024**: 25/73
 
-**2024**: 35/70
+**2024**: 35/73
 
-**2025**: 10/70
+**2025**: 13/73
 
 <br>
 
@@ -1052,7 +1052,9 @@ Uses relative free energy perturbation from Schrödinger (FEP+) combined with ac
 ------------------------------------------------------------------------------------------------------------
 ### 33. Modern hit-finding with structure-guided de novo design: identification of novel nanomolar A2A receptor ligands using reinforcement learning
 
-**Publication Date**: October 14, 2024 - [Pre-print Link](https://chemrxiv.org/engage/chemrxiv/article-details/6708fba651558a15efc54314)
+**Publication Date**:
+* October 14, 2024 [Pre-print Link](https://chemrxiv.org/engage/chemrxiv/article-details/6708fba651558a15efc54314)
+* July 1, 2025 [Published Paper Link](https://www.nature.com/articles/s41467-025-60629-0)
 
 **Target**: A2A Receptor Antagonist Design - **Design Task**: *De novo* structure-based design
 
@@ -1060,7 +1062,7 @@ Uses relative free energy perturbation from Schrödinger (FEP+) combined with ac
 
 **Optimization Algorithm Class**: Reinforcement learning
 
-**Hit Rate**: 8/10 have pKi < 10 μM
+**Hit Rate**: 8/10 have pKi > 5 - To be precise, 9 compounds were selected for synthesis and 1 compound has 2 isomers so 10 "total" compounds
 
 **Outcome**: μM antagonist and selective against A2B
 
@@ -1344,3 +1346,65 @@ However, it is unclear how many of these derivatives were made or if they were j
 
 **Notes**: Initial structure-based generative design led to the experimental validation of **ISM7516**. Subsequent molecular dynamics (MD) probed the effect of small chemical group changes and led to an optimized inhibitor (**ISM3576** with IC50 0.10 nM). Note that several modifications were tested from this MD workflow (see Supplementary Figure 5). However, **ISM3576** had indicators of potential undesirable drug-drug interations. Further molecular dynamics led to the experimental validation of **ISM5939** with IC50 0.45 nM with improved ADMET properties and *in vivo* pharmacokinetics
 
+------------------------------------------------------------------------------------------------------------
+
+### 48. Identification of Novel pan-KRAS Inhibitors via Structure-Based Drug Design, Scaffold Hopping, and Biological Evaluation
+
+**Publication Date**: June 5, 2025 - [Paper Link](https://pubs.acs.org/doi/full/10.1021/acsmedchemlett.5c00080)
+
+**Target**: pan-KRAS - **Design Task**: Structure-based design (scaffold hopping from known compound)
+
+**Model**: Chemistry42 (Input: Mixed, Output: Mixed). Mixed = SMILES, fingerprints, graphs
+
+**Optimization Algorithm Class**: Reinforcement learning
+
+**Hit Rate**: At least one generated compound was made and is active - 1/1 (100%) - However, it is not 100% clear if other *generated* molecules were also synthesized and tested. See notes.
+
+**Outcome** nM inhibitor - **Most Potent Designs**: Considering the one molecule that was for sure *generated*, its IC50 values are:
+ 
+* KRAS G12V: 0.16 nM
+* KRAS G12D: 0.29 nM
+* KRAS wild-type: 0.62 nM
+
+**Notes**: Scaffold hopping based on the starting compound [MRTX1133](https://pubs.acs.org/doi/10.1021/acs.jmedchem.1c01688). In the initial scaffold hopping generative efforts, a library was prioritized by binding pose and estimated affinity calculations resulting in 321 compounds. Compounds were selected from these 321 for the initial experimental validation. It is not 100% clear how many experimentally validated compounds were *generated*. In the paper, there is further SAR performed manually.
+
+------------------------------------------------------------------------------------------------------------
+
+### 49. Design and Synthesis of Novel Dual Inhibitors for JAK3 and TEC Kinases in Autoimmune Disorders
+
+**Publication Date**: June 24, 2025 - [Paper Link](https://pubs.acs.org/doi/10.1021/acs.jmedchem.4c02288)
+
+**Target**: Dual inhibitors of JAK3 and TEC - **Design Task**: Scaffold hopping from known molecule (Ritlecitinib from Pfizer)
+
+**Model and Optimization Algorithm Class**: An ensemble of models were used (all information is from Supporting Information Table S2):
+
+* "Expert Design" (presumably manual domain expert)
+* "Scaffold Replace" (replace reference molecule's scaffold with scaffolds from commercial libaries such as ZINC)
+* VAE (Input: SMILES, Output: SMILES) - No specific VAE model was referenced
+* Junction-tree VAE ([JTVAE](https://arxiv.org/abs/1802.04364)) - (Input: Graph, Output: Graph)
+* Deep Generative Model of Graphs ([DGMG](https://arxiv.org/abs/1803.03324)) - (Input: Graph, Output: Graph)
+* [RationaleRL](https://arxiv.org/abs/2002.03244) - (Input: Graph, Output: Graph), this model uses reinforcement learning which was guided by an XGBoost QSAR trained on known JAK3 covalent inhibitors (see Notes)
+
+**Hit Rate**: 6/6 (100%) - **Caveat**: 100,000 generated molecules using the model ensemble above but it is unclear which of the 6 came from which model. Therefore, there could have been < 6 *generated* molecules that were experimentally validated if some were selected from the "Expert Design" and/or "Scaffold Replace" methods.
+
+**Outcome** nM inhibitor with *in vivo* validation - **Most Potent Designs**: IC50 1.63 nM (compound **1**, see Supporting Information Figure S3)
+
+**Notes**: Generated 100,000 molecules from various methods (see above) based on the positive reference, Ritlecitinib from Pfizer. These molecules were filtered following a funnel workflow to remove duplicates, filter by properties, etc. Known JAK3 covalent inhibitors were mined from ChEMBL version 26 and BindingDB to train QSAR models (XGBoost was selected in the end). See Supporting Information S3 for all details. This QSAR model was used in the funnel workflow and then docking was further applied. After experimentally validating the generated compounds, SAR was performed manually by domain experts and *in vivo* validation was demonstrated.
+
+------------------------------------------------------------------------------------------------------------
+
+### 50. Rational Design and Identification of ISM7594 as a Tissue-Agnostic FGFR2/3 Inhibitor
+
+**Publication Date**: June 25, 2025 - [Paper Link](https://pubs.acs.org/doi/full/10.1021/acs.jmedchem.5c00928)
+
+**Target**: FGFR2/3 Inhibitor - **Design Task**: Ligand-based (pharmacophore) design
+
+**Model**: Chemistry42 (Input: Mixed, Output: Mixed). Mixed = SMILES, fingerprints, graphs
+
+**Optimization Algorithm Class**: Reinforcement learning
+
+**Hit Rate**: 1/1 (100%) - From the paper: "compound **1** bearing core3 demonstrated promising inhibitory activity against FGFR2 and FGFR3 with IC50 values of 6.0 and 72.8 nM, respectively."
+
+**Outcome** nM inhibitor with *in vivo* validation - **Most Potent Designs**: From the paper: "compound **1** bearing core3 demonstrated promising inhibitory activity against FGFR2 and FGFR3 with IC50 values of 6.0 and 72.8 nM, respectively."
+
+**Notes**: Starting point was the authors' previous work that identified a [lead compound](https://pubs.acs.org/doi/full/10.1021/acs.jmedchem.4c03205).
